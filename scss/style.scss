@@ -345,7 +345,7 @@ body {
 .menu__nabidka--small {
     display: flex;
     justify-content: space-around;
-    margin: 0 0 10px 0;
+    margin-bottom: 20px;
 
     a {
         font-weight: 600;
@@ -376,6 +376,7 @@ body {
 .menu__nabidka--dorty {
     display: flex;
     justify-content: space-around;
+    padding: 0 120px;
     
     li {
         list-style: none;
@@ -383,8 +384,12 @@ body {
 
     a {
         text-decoration: none;
-        color: $font-colour;
-        font-size: 24px;
+        color: $font-colour-shadow;
+        font-size: 20px;
+        
+        &:hover {
+            color: $font-colour;
+            }
     }
 
     .menu__nabidka--item:hover {
@@ -395,8 +400,8 @@ body {
 .cakes__klasik {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 0 60px 0;
-    padding: 20px 120px 30px 120px;
+    margin-bottom: 20px;
+    padding: 30px 120px;
     gap: 20px;
     background-color: $button-purple-colour-light;
 
@@ -412,8 +417,8 @@ body {
         font-size: 36px;
         font-family: $font-motto;
         font-weight: 400;
+        padding-bottom: 10px;
     }
-
 }
 
 .cakes__description--paragr {
@@ -427,8 +432,8 @@ body {
 .cakes__detske {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 0 60px 0;
-    padding: 20px 120px 30px 120px;
+    margin-bottom: 20px;
+    padding: 30px 120px;
     gap: 20px;
     background-color: $button-purple-colour-light;
 
@@ -440,8 +445,8 @@ body {
 .cakes__svatba {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 0 60px 0;
-    padding: 20px 120px 30px 120px;
+    margin-bottom: 20px;
+    padding: 30px 120px;
     gap: 20px;
     background-color: $button-purple-colour-light;
 
@@ -453,8 +458,8 @@ body {
 .cakes__vyroci {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 0 60px 0;
-    padding: 20px 120px 30px 120px;
+    margin-bottom: 20px;
+    padding: 30px 120px;
     gap: 20px;
     background-color: $button-purple-colour-light;
 
@@ -468,6 +473,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #C9C8C8;
+    overflow: hidden;
             
     h3 {
         margin: 10px 0;
@@ -581,7 +587,7 @@ body {
 
 .menu__svatba {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 120px;
     
     li {
@@ -614,8 +620,12 @@ body {
     }
 }
 
+.svatba__kontakt {
+    text-decoration: none;
+    color: $colour-hover;
+}
+
 .svatba__item {
-    background-color: $bcg-colour;
     padding: 0 120px 30px 120px;
     margin: 0 0 60px 0;
     line-height: 1.5;
@@ -654,6 +664,28 @@ body {
     line-height: 2;
 }
 
+.svatba__dorty {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.svatba__dort--item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 2px 2px 5px #C9C8C8;
+
+    img {
+        background-image: $footer-colour;
+        margin: auto;
+        width: 100%;
+    }
+}
+
 .svatba__cukrovi {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -664,7 +696,7 @@ body {
 
 .svatba__cukrovi--item {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin: 0;
     box-shadow: 2px 2px 5px #C9C8C8;
@@ -678,7 +710,7 @@ body {
     h3 {
         margin: 0;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         padding: 0 0 10px 0;
     }
@@ -686,7 +718,71 @@ body {
     p {
         text-align: center;
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
+    }
+}
+
+.svatba__zakusky {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    .svatba__zakusky--item {
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+
+        img {
+            background-image: $footer-colour;
+            margin: auto;
+            width: 100%;
+        }
+        
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.svatba__kolace {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    .svatba__kolace--item {
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+    
+        img {
+            background-image: $footer-colour;
+            margin: auto;
+            width: 100%;
+        }
+        
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+        }
     }
 }
 
@@ -700,48 +796,55 @@ body {
 }
 
 .kontakt__udaje {
-    padding: 20px 120px 0 120px;
+    padding: 20px 120px 40px 120px;
 }
 
 .kontakt__nadpis {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 36px;
+    font-family: $font-motto;
+    font-weight: 400;
     padding-bottom: 10px;
 }
 
 .kontakt__adresa {
     font-size: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .kontakt__description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 10px;
 }
 
-.questions {
-    line-height: 1.8;
-    padding-bottom: 40px;
+.line {
+    height: 2px solid red;
+    
 }
 
-.formular {
+.kontakt__questions {
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+/*.formular {
     padding: 0 120px;
     margin-bottom: 40px;
 
     p {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
-}
+}*/
 
 .mapa {
     padding-top: 20px;
-}
 
-h2 {
-    font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 10px;
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-family: $font-motto;
+        font-weight: 400;
+    }
 }
 .mapa__activ {
     height: 300px;
@@ -752,3 +855,88 @@ h2 {
 
 
 
+/* CSS pro O nás*/
+
+.onas {
+    padding: 0 120px;
+}
+
+.onas__majitelka {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $button-purple-colour-light;
+    padding: 30px;
+    margin-bottom: 60px;
+    gap: 20px;
+
+    img {
+        max-width: 100%;
+        object-fit: cover;
+        border: 8px solid white;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+        }
+}
+
+.onas__nadpis {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: $font-motto;
+    font-weight: 400;
+}
+
+.onas__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.onas__interiery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    background-color: $button-purple-colour-light;
+    padding: 30px;
+    margin-bottom: 60px;
+    gap: 20px;
+
+        img {
+        width: 100%;
+        object-fit: cover;
+        border: 8px solid white;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+    }
+}
+
+.onas__tym {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $button-purple-colour-light;
+    padding: 30px;
+    margin-bottom: 60px;
+    gap: 20px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border: 8px solid white;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+    }
+}
+
+.onas__tym--clenove {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.onas__description {
+    grid-column: 1 / 3;
+}
+
+.onas__clen--veronika,
+.onas__clen--martina {
+    grid-column: 1 / 3;
+}
