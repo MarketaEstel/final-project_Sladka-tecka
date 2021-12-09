@@ -1,98 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
-    
-    <title>Sladká tečka</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
+---
+layout: layouts/hlavni-sablona.njk
+title: Sladká tečka
+--- 
 
-<header class="header">
-    <div class="header__background">
-        <h1 class="header__motto">Jsme cukrářství s tradičními zákusky a dorty</h1>
-        <h2 class="header__podpis">Cukrářství Kateřina Jelínková</h2>
+{% include 'partials/hero-menu-shadow.njk' %}
+
+{% include 'partials/menu-svatba.njk' %}
+
+        <div class="svatba__navod">
+        <p>Vaši svatební přání si rádi poslechneme osobně. Pro inspiraci se podívejte níže.</p>
+        
+        <p>Můžete nás oslovit přes e-mail nebo telefonicky. 
+            <a class="svatba__kontakt" href="/kontakt/">Kontakt</a></p>
+
+        <p>Svatební zakázku řešíme vždy osobně, bez objednávkového formuláře, kvůli její složitosti a náročnosti.</p>
+
+        <p>Je nutné, abyste objednávali nejpozději 14 dní před termínem vyzvednutí. </p>
     </div>
-    <img class="header__logo" src="images/logo_sladka_tecka.svg" alt="logo">
-</header>   
 
-<ul class="hero__menu--shadow">
-    <a href="#">
-        <div class="hero__item">
-            <li>O nás</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Fotogalerie</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Kontakt</li>
-        </div>
-    </a>
-</ul>
-
-<div class="menu__nabidka--section">
-    
-    <div class="menu__nabidka--small">
-        <div class="menu__item--small">
-            <a href="#">Dorty</a>
-        </div>
-
-        <div class="menu__item--small">    
-            <a href="#">Zákusky</a>
-        </div>
-
-        <div class="menu__item--small">
-            <a href="">Svatba</a>
-        </div>
-    </div>
-    
-
-    <ul class="menu__svatba">
-        <div class="menu__svatba--item">
-            <a href=""><li>Svatební dorty</li></a>
-        </div>
-        <div class="menu__svatba--item">
-            <a href=""><li>Svatební cukroví</li></a>
-        </div>
-        <div class="menu__svatba--item">
-            <a href=""><li>Zákusky</li></a>
-        </div>
-        <div class="menu__svatba--item">
-            <a href=""><li>Koláče</li></a>
-        </div>
-        <div class="menu__svatba--item">
-            <a href=""><li>Výslužky</li></a>
-        </div>
-    </ul>
-</div>
-
-<div class="svatba__navod">
-    <p>Vaši svatební přání si rádi poslechneme osobně. Pro inspiraci se podívejte níže.</p>
-    
-    <p>Můžete nás oslovit přes e-mail nebo telefonicky. 
-        <a class="svatba__kontakt" href="#">Kontakt</a></p>
-
-    <p>Svatební zakázku řešíme vždy osobně, bez objednávkového formuláře, kvůli její složitosti a náročnosti.</p>
-
-    <p>Je nutné, abyste objednávali nejpozději 14 dní před termínem vyzvednutí. </p>
-</div>
-
-
-<div class="svatba__item">
+<div id="svatba_dorty" class="svatba__item">
+    <div class="svatba__dorty--popis">
     <h2>Svatební dorty</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non velit cumque iusto culpa, nobis autem? Inventore numquam nam maiores deserunt temporibus rerum ea velit esse amet dolorem. Eos, dicta possimus?</p>
 
@@ -133,95 +60,97 @@
 
     <div class="svatba__dorty">
         <div class="svatba__dort--item">
-            <img class="svatba__photo--dort" src="images/dorty/svatba/dort_svatba_chryzantemy--small.jpg" alt="Dort svatební">
+            <img class="svatba__photo--dort" src="/images/dorty/svatba/dort_svatba_chryzantemy--small.jpg" alt="Dort svatební">
         </div>
 
         <div class="svatba__dort--item">
-            <img class="svatba__photo--dort" src="images/dorty/svatba/dort_svatba_ruzovy--small.jpg" alt="Dort svatební">
+            <img class="svatba__photo--dort" src="/images/dorty/svatba/dort_svatba_ruzovy--small.jpg" alt="Dort svatební">
         </div>
 
         <div class="svatba__dort--item">
-            <img class="svatba__photo--dort" src="images/dorty/svatba/dort_svatba_zeleny--small.jpg" alt="Dort svatební">
+            <img class="svatba__photo--dort" src="/images/dorty/svatba/dort_svatba_zeleny--small.jpg" alt="Dort svatební">
         </div>
 
         <div class="svatba__dort--item">
-            <img class="svatba__photo--dort" src="images/dorty/svatba/dort_svatba_prirodni--small.jpg" alt="Dort svatební">
+            <img class="svatba__photo--dort" src="/images/dorty/svatba/dort_svatba_prirodni--small.jpg" alt="Dort svatební">
         </div>
     </div>
+</div>
+
 </div>
 
 <div class="button__homeandup">
     <div class="button__home">
-        <a href="#">Úvod</a> 
+        <a href="#menu_nabidka">Úvod</a> 
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
-<div class="svatba__item">
+<div id="svatba_cukrovi" class="svatba__item">
     <h2>Svatební cukroví</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, pariatur iste. Consequuntur, nesciunt doloribus nisi officiis sequi dolorem praesentium sit, temporibus, delectus earum ducimus porro cum inventore repudiandae laborum in?</p>
     <p>Cena za kg je 850 Kč. Minimální objednávka jsou 4 kg.</p>
 
     <div class="svatba__cukrovi">
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/linecky_kosicek.jpg" alt="Linecký košíček">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/linecky_kosicek.jpg" alt="Linecký košíček">
             <h3>Linecký košíček s ořechovou náplní</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/vanikovy_ctyrlistek.jpg" alt="Vanilkový čtyřlístek">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/vanikovy_ctyrlistek.jpg" alt="Vanilkový čtyřlístek">
             <h3>Vanilkový čtyřlístek v cukru</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/iselske.jpg" alt="Išelské cukroví">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/iselske.jpg" alt="Išelské cukroví">
             <h3>Išelské s mandlí</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/rybizove_srdicko.jpg" alt="rybízové srdíčko">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/rybizove_srdicko.jpg" alt="rybízové srdíčko">
             <h3>Rybízové srdíčko</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/orechovy_trojlistek.jpg" alt="Ořechový trojlístek">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/orechovy_trojlistek.jpg" alt="Ořechový trojlístek">
             <h3>Ořechové trojlístky s krémem</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/linecke_srdicko.jpg" alt="Linecké srdíčko">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/linecke_srdicko.jpg" alt="Linecké srdíčko">
             <h3>Linecké srdíčko s marmeládou</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/linecka_podkova.jpg" alt="Linecká podkova">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/linecka_podkova.jpg" alt="Linecká podkova">
             <h3>Linecká podkova s krémem</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/marcipanova_labut.jpg" alt="Marcipánová labuť">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/marcipanova_labut.jpg" alt="Marcipánová labuť">
             <h3>Marcipánová labuť</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/mocca_ovalek.jpg" alt="Mocca oválek">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/mocca_ovalek.jpg" alt="Mocca oválek">
             <h3>Mocca oválky s kávovým krémem</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
         
         <div class="svatba__cukrovi--item">
-            <img class="svatba__photo--cukrovi" src="images/svatba/pantofle.jpg" alt="Linecký pantoflíček">
+            <img class="svatba__photo--cukrovi" src="/images/svatba/pantofle.jpg" alt="Linecký pantoflíček">
             <h3>Linecký pantoflíček</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
@@ -234,36 +163,36 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
 
-<div class="svatba__item">
+<div id="svatba_zakusky" class="svatba__item">
     <h2>Zákusky</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, deserunt cupiditate! Aliquid esse, eius consectetur, autem modi repellendus incidunt nihil, voluptatum ipsam voluptatem ex natus ducimus omnis saepe voluptatibus asperiores.</p>
 
     <div class="svatba__zakusky">
         <div class="svatba__zakusky--item">
-            <img class="svatba__photo--zakusky" src="images/svatba/svatba_jogurtovy_rez--small.jpg" alt="Jogurtový řez">
+            <img class="svatba__photo--zakusky" src="/images/svatba/svatba_jogurtovy_rez--small.jpg" alt="Jogurtový řez">
             <h3>Jahodový jogurtový řez</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__zakusky--item">
-            <img class="svatba__photo--zakusky" src="images/svatba/svatba_pistaciovy_rez--small.jpg" alt="Pistáciový řez">
+            <img class="svatba__photo--zakusky" src="/images/svatba/svatba_pistaciovy_rez--small.jpg" alt="Pistáciový řez">
             <h3>Pistáciový řez</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__zakusky--item">
-            <img class="svatba__photo--zakusky" src="images/svatba/svatba_pusinka--small.jpg" alt="Pusinka">
+            <img class="svatba__photo--zakusky" src="/images/svatba/svatba_pusinka--small.jpg" alt="Pusinka">
             <h3>Sněhová pusinka s borůvkami</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
 
         <div class="svatba__zakusky--item">
-            <img class="svatba__photo--zakusky" src="images/svatba/svatba_red_velvet--small.jpg" alt="red velvet řez">
+            <img class="svatba__photo--zakusky" src="/images/svatba/svatba_red_velvet--small.jpg" alt="red velvet řez">
             <h3>Red velvet řezy</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
         </div>
@@ -277,12 +206,12 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
 
-<div class="svatba__item">
+<div id="svatba_kolace" class="svatba__item">
     <h2>Koláče</h2>
     <p> Nabízíme koláče tvarohové, povidlové a ořechové. <br>
     Minimální objednávka je 100 ks, cca 2 kg, ve variantě jednodruhové, nebo mix ze dvou a tři druhů.</p>
@@ -291,25 +220,25 @@
 
     <div class="svatba__kolace">
         <div class="svatba__kolace--item">
-            <img class="svatba__photo--kolace" src="images/kolace/kolace_mak--small.jpg" alt="makové koláče">
+            <img class="svatba__photo--kolace" src="/images/kolace/kolace_mak--small.jpg" alt="makové koláče">
             <h3>Makové koláče</h3>
             <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>-->
         </div>
 
         <div class="svatba__kolace--item">
-            <img class="svatba__photo--kolace" src="images/kolace/kolace_orechy--small.jpg" alt="ořechové koláče">
+            <img class="svatba__photo--kolace" src="/images/kolace/kolace_orechy--small.jpg" alt="ořechové koláče">
             <h3>Ořechové koláče</h3>
             <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>-->
         </div>
 
         <div class="svatba__kolace--item">
-            <img class="svatba__photo--kolace" src="images/kolace/kolace_povidla--small.jpg" alt="povidlové koláče">
+            <img class="svatba__photo--kolace" src="/images/kolace/kolace_povidla--small.jpg" alt="povidlové koláče">
             <h3>Povidlové koláče</h3>
             <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>-->
         </div>
 
         <div class="svatba__kolace--item">
-            <img class="svatba__photo--kolace" src="images/kolace/kolace_tvaroh--small.jpg" alt="tvarohové koláče">
+            <img class="svatba__photo--kolace" src="/images/kolace/kolace_tvaroh--small.jpg" alt="tvarohové koláče">
             <h3>Tvarohové koláče</h3>
             <!--<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>-->
         </div>
@@ -322,16 +251,17 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
-
-<div class="svatba__item">
-    <h2>Výslužky</h2>
-    <p>Aut ratione dolor et earum dolor eum repellat quia ut labore quam et totam perspiciatis est internos expedita sed modi maiores. Možnosti výslužek atd. atd.</p>
-    <p>Výslužky chystáme ve variantách 250–300 g a 500–600 g.<br>
-    Cena je 300 Kč za menší variantu a 450 Kč za větší.</p>
+<div id="svatba_vysluzky" class="svatba__item">
+    <div class="svatba__vysluzky">
+        <h2>Výslužky</h2>
+        <p>Aut ratione dolor et earum dolor eum repellat quia ut labore quam et totam perspiciatis est internos expedita sed modi maiores. Možnosti výslužek atd. atd.</p>
+        <p>Výslužky chystáme ve variantách 250–300 g a 500–600 g.<br>
+            Cena je 300 Kč za menší variantu a 450 Kč za větší.</p>
+    </div>
 </div>
 
 <div class="button__homeandup">
@@ -340,16 +270,6 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
-
-<footer class="footer">
-    <p class="footer_text"> © Cukrářská výroba Sladká tečka, design Markéta Estel Matysová <br>
-    SladkaTecka@gmail.com <br>
-    777 666 555, 777 888 999 <br>
-    Brno-Žebětín, Drdy 46, 614 00 </p>
-</footer>
-        
-</body>
-</html>

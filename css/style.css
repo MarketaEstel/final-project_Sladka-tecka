@@ -1,491 +1,13 @@
-@charset "UTF-8";
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*font-family: 'Open Sans', sans-serif;
-font-family: 'Dancing Script', cursive;*/
-body {
-  margin: auto;
-  padding: 0;
-  max-width: 1440px;
-  font-family: "Open Sans", sans-serif;
-  background-color: #fdf7f8;
-}
-
-.header__background {
-  background-image: url(/images/uvod_hero.jpg);
-  padding: 180px 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #987092;
-}
-
-.header {
-  margin: 0;
-  position: relative;
-}
-.header h1 {
-  position: absolute;
-  font-family: "Grand Hotel", cursive;
-  top: 5%;
-  left: 5%;
-  text-align: center;
-  color: white;
-  font-size: 48px;
-  margin: 0;
-  font-weight: 400;
-}
-.header h2 {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  font-family: "Grand Hotel", cursive;
-  color: white;
-  margin: 0;
-  text-align: right;
-  font-size: 36px;
-  font-weight: 400;
-}
-.header img {
-  margin: 0;
-  position: absolute;
-  width: 160px;
-  top: 28%;
-  left: 45%;
-}
-
-.hero__menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px 120px 30px 120px;
-  gap: 60px;
-  margin: 30px 0;
-  width: 100%;
-  justify-content: space-around;
-}
-.hero__menu a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  flex: 0 1 auto;
-  flex-wrap: nowrap;
-}
-.hero__menu li {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  font-size: 50px;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-  color: #2b2b2b;
-  text-align: center;
-}
-.hero__menu li:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #987092;
-          text-decoration-color: #987092;
-  text-underline-offset: 10px;
-}
-
-.menu__nabidka {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px 120px 30px 120px;
-  align-content: center;
-  gap: 20px;
-  margin: 0 0 20px 0;
-  background-color: #e8dfe1;
-}
-.menu__nabidka a {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-
-.menu__item {
-  position: relative;
-  overflow: hidden;
-}
-.menu__item:hover .menu__description {
-  transform: translateY(-100%);
-  transition: transform 0.5s;
-}
-
-.menu__image {
-  max-width: 100%;
-  display: block;
-}
-.menu__image:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-
-.menu__description {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 100%;
-  text-align: center;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-  font-size: 36px;
-  padding: 5px 0;
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.actual {
-  color: #2b2b2b;
-  padding: 20px 120px 0 120px;
-  margin-bottom: 60px;
-}
-.actual h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.doba {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  color: #2b2b2b;
-  text-align: left;
-  line-height: 1.6;
-  background-color: #e8dfe1;
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 20px 120px 20px 120px;
-}
-.doba h3 {
-  margin-bottom: 5px;
-}
-.doba .doba__adresa {
-  display: flex;
-  margin: 0 0 30px 0;
-}
-.doba .doba__description {
-  margin: 0 20px 0px 0;
-  flex: 1 1 50%;
-  flex-wrap: nowrap;
-}
-.doba .doba__mapa {
-  padding: 10px 30px;
-  flex: 0 1 auto;
-  background-color: #c2a2c0;
-  text-align: center;
-  flex-wrap: nowrap;
-  margin: 0 0 0 20px;
-  border-radius: 30px;
-}
-.doba .doba__mapa:hover {
-  background-color: #987092;
-}
-.doba .doba__mapa a {
-  text-decoration: none;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-.doba .doba__mapa a:hover {
-  font-weight: 600;
-}
-.doba .doba__open {
-  flex: 0 1 50%;
-}
-.doba .doba__open .doba__time {
-  margin-bottom: 10px;
-}
-
-.button {
-  display: flex;
-  margin: 0;
-  margin-bottom: 60px;
-  justify-content: space-around;
-  max-width: 100%;
-  padding: 20px 120px 0 120px;
-}
-.button a {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-.button a:hover {
-  color: white;
-}
-
-.button__facebook {
-  background-color: #d0d9d6;
-  font-size: 14px;
-  flex: 1 1 auto;
-  padding: 10px;
-  text-align: center;
-  width: 50%;
-  margin-right: 30px;
-  border-radius: 20px;
-}
-.button__facebook:hover {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #6c8280;
-}
-
-.button__instagram {
-  background-color: #d0d9d6;
-  font-size: 14px;
-  flex: 1 1 auto;
-  padding: 10px;
-  text-align: center;
-  width: 50%;
-  margin-left: 30px;
-  border-radius: 20px;
-}
-.button__instagram:hover {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #6c8280;
-  color: white;
-}
-
-.footer {
-  background-color: #6c8280;
-  color: #d0d9d6;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.6;
-  padding: 40px 0 40px 0;
-  width: 100%;
-}
-
-/* CSS pro Dorty*/
-.hero__menu--shadow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  margin: 30px 0;
-  padding: 0 120px 0 120px;
-  justify-content: space-around;
-}
-.hero__menu--shadow a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  flex: 0 1 auto;
-  flex-wrap: nowrap;
-}
-.hero__menu--shadow li {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  font-size: 40px;
-  font-weight: 400;
-  font-family: "Grand Hotel", cursive;
-  color: #2b2b2b;
-  text-align: center;
-  color: #858284;
-}
-.hero__menu--shadow li:hover {
-  color: #2b2b2b;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #987092;
-          text-decoration-color: #987092;
-  text-underline-offset: 10px;
-}
-
-.menu__nabidka--section {
-  background-color: #e8dfe1;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-.menu__nabidka--small {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.menu__nabidka--small a {
-  font-weight: 600;
-}
-
-.menu__item--small {
-  padding: 10px 20px;
-  background-color: #c2a2c0;
-  border-radius: 30px;
-}
-.menu__item--small:hover {
-  background-color: #987092;
-  font-weight: 600;
-}
-.menu__item--small a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #2b2b2b;
-}
-.menu__item--small a:hover {
-  color: white;
-}
-
-.menu__nabidka--dorty {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 120px;
-}
-.menu__nabidka--dorty li {
-  list-style: none;
-}
-.menu__nabidka--dorty a {
-  text-decoration: none;
-  color: #858284;
-  font-size: 20px;
-}
-.menu__nabidka--dorty a:hover {
-  color: #2b2b2b;
-}
-.menu__nabidka--dorty .menu__nabidka--item:hover {
-  font-weight: 600;
-}
-
-.cakes__klasik {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 20px;
-  padding: 30px 120px;
-  gap: 20px;
-  background-color: #e8dfe1;
-}
-.cakes__klasik a {
-  text-decoration: none;
-}
-
-.cakes__description {
-  grid-column: 1/-1;
-}
-.cakes__description .cakes__nadpis {
-  font-size: 36px;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-
-.cakes__description--paragr {
-  margin: 0;
-  padding-bottom: 20px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.cakes__detske {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 20px;
-  padding: 30px 120px;
-  gap: 20px;
-  background-color: #e8dfe1;
-}
-.cakes__detske a {
-  text-decoration: none;
-}
-
-.cakes__svatba {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 20px;
-  padding: 30px 120px;
-  gap: 20px;
-  background-color: #e8dfe1;
-}
-.cakes__svatba a {
-  text-decoration: none;
-}
-
-.cakes__vyroci {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 20px;
-  padding: 30px 120px;
-  gap: 20px;
-  background-color: #e8dfe1;
-}
-.cakes__vyroci a {
-  text-decoration: none;
-}
-
-.cake {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #C9C8C8;
-  overflow: hidden;
-}
-.cake h3 {
-  margin: 10px 0;
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-.cake p {
-  text-align: center;
-  margin: 0;
-  font-size: 12px;
-}
-
-.cake__image {
-  background-image: #d0d9d6;
-  margin: auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-.cake:hover img {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.cake__buttons {
-  display: flex;
-  border-radius: 10px;
-  font-weight: 600;
-  justify-content: space-around;
-  margin: 0 0 15px 0;
-}
-
-.cena {
-  flex: 0 1 auto;
-  font-size: 14px;
-  padding: 5px 15px;
-  background-color: #d0d9d6;
-  text-align: right;
-  margin: 0;
-}
-
-.objednat {
-  padding: 5px 15px;
-  background-color: #6c8280;
-  border-radius: 20px;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-}
-.objednat:hover {
-  color: #2b2b2b;
-}
-
 .button__homeandup {
   display: flex;
-  margin: 0 20px 60px 0;
+  margin-bottom: 60px;
   padding: 20px 120px 0 120px;
+}
+@media screen and (max-width: 640px) {
+  .button__homeandup {
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
 }
 
 .button__home {
@@ -497,10 +19,20 @@ body {
 .button__home:hover {
   background-color: #6c8280;
 }
+@media screen and (max-width: 640px) {
+  .button__home:hover:active {
+    background-color: #6c8280;
+  }
+}
 .button__home a {
   text-decoration: none;
   color: #2b2b2b;
   font-weight: 600;
+}
+@media screen and (max-width: 640px) {
+  .button__home a {
+    font-size: 14px;
+  }
 }
 .button__home a:hover {
   color: white;
@@ -515,266 +47,27 @@ body {
 .button__up:hover {
   background-color: #6c8280;
 }
+@media screen and (max-width: 640px) {
+  .button__up:hover:active {
+    background-color: #6c8280;
+  }
+}
 .button__up a {
   text-decoration: none;
   color: #2b2b2b;
   font-weight: 600;
 }
+@media screen and (max-width: 640px) {
+  .button__up a {
+    font-size: 14px;
+  }
+}
 .button__up a:hover {
   color: white;
 }
 
-/*CSS pro Svatbu*/
-.menu__svatba {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 120px;
-}
-.menu__svatba li {
-  list-style: none;
-}
-.menu__svatba a {
-  text-decoration: none;
-  color: #858284;
-  font-size: 20px;
-}
-.menu__svatba a:hover {
-  color: #2b2b2b;
-}
-.menu__svatba .menu__svatba--item:hover {
-  font-weight: 600;
-}
-
-.svatba__navod {
-  padding: 0 120px 0 120px;
-  margin: 60px 0 20px 0;
-  line-height: 1.5;
-}
-.svatba__navod p {
-  padding-bottom: 10px;
-  font-weight: 600;
-}
-
-.svatba__kontakt {
-  text-decoration: none;
-  color: #987092;
-}
-
-.svatba__item {
-  padding: 0 120px 30px 120px;
-  margin: 0 0 60px 0;
-  line-height: 1.5;
-}
-.svatba__item h2 {
-  margin-bottom: 20px;
-  padding-top: 20px;
-  font-weight: 400;
-  font-family: "Grand Hotel", cursive;
-  font-size: 36px;
-}
-.svatba__item h3 {
-  margin-bottom: 10px;
-  padding-top: 20px;
-}
-.svatba__item p {
-  margin-bottom: 10px;
-}
-
-.svatba__item--cakes {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.svatba__item--cakes li {
-  list-style: none;
-}
-
-.svatba__item--corpus,
-.svatba__item--cream,
-.svatba__item--decorate {
-  text-align: center;
-  line-height: 2;
-}
-
-.svatba__dorty {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-}
-
-.svatba__dort--item {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0;
-  box-shadow: 2px 2px 5px #C9C8C8;
-}
-.svatba__dort--item img {
-  background-image: #d0d9d6;
-  margin: auto;
-  width: 100%;
-}
-
-.svatba__cukrovi {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-}
-
-.svatba__cukrovi--item {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0;
-  box-shadow: 2px 2px 5px #C9C8C8;
-}
-.svatba__cukrovi--item img {
-  background-image: #d0d9d6;
-  margin: auto;
-  width: 100%;
-}
-.svatba__cukrovi--item h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  padding: 0 0 10px 0;
-}
-.svatba__cukrovi--item p {
-  text-align: center;
-  margin: 0;
-  font-size: 12px;
-}
-
-.svatba__zakusky {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-.svatba__zakusky .svatba__zakusky--item {
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 2px 2px 5px #C9C8C8;
-}
-.svatba__zakusky .svatba__zakusky--item img {
-  background-image: #d0d9d6;
-  margin: auto;
-  width: 100%;
-}
-.svatba__zakusky .svatba__zakusky--item h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  padding: 0 0 10px 0;
-}
-.svatba__zakusky .svatba__zakusky--item p {
-  text-align: center;
-  margin: 0;
-  font-size: 12px;
-}
-
-.svatba__kolace {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-.svatba__kolace .svatba__kolace--item {
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 2px 2px 5px #C9C8C8;
-}
-.svatba__kolace .svatba__kolace--item img {
-  background-image: #d0d9d6;
-  margin: auto;
-  width: 100%;
-}
-.svatba__kolace .svatba__kolace--item h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  padding: 0 0 10px 0;
-}
-.svatba__kolace .svatba__kolace--item p {
-  text-align: center;
-  margin: 0;
-  font-size: 12px;
-}
-
-/*CSS pro Kontakt*/
-.kontakt {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  background-color: #e8dfe1;
-}
-
-.kontakt__udaje {
-  padding: 20px 120px 40px 120px;
-}
-
-.kontakt__nadpis {
-  font-size: 36px;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-
-.kontakt__adresa {
-  font-size: 16px;
-  padding-bottom: 20px;
-}
-
-.kontakt__description {
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 10px;
-}
-
-.line {
-  height: 2px solid red;
-}
-
-.kontakt__questions {
-  line-height: 1.8;
-  padding-bottom: 20px;
-}
-
-/*.formular {
-    padding: 0 120px;
-    margin-bottom: 40px;
-
-    p {
-        padding-bottom: 20px;
-    }
-}*/
-.mapa {
-  padding-top: 20px;
-}
-.mapa h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-}
-
-.mapa__activ {
-  height: 300px;
-  width: 400px;
-  background-color: white;
-  padding: 10px;
-}
-
-/* CSS pro O nás*/
 .onas {
-  padding: 0 120px;
+  padding: 0;
 }
 
 .onas__majitelka {
@@ -786,7 +79,7 @@ body {
   gap: 20px;
 }
 .onas__majitelka img {
-  max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 8px solid white;
@@ -855,4 +148,1016 @@ body {
 .onas__clen--veronika,
 .onas__clen--martina {
   grid-column: 1/3;
+}
+
+.cakes__klasik {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  padding: 30px 120px;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .cakes__klasik {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    gap: 10px;
+  }
+}
+.cakes__klasik a {
+  text-decoration: none;
+}
+
+.cakes__description {
+  grid-column: 1/-1;
+}
+.cakes__description .cakes__nadpis {
+  font-size: 36px;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 640px) {
+  .cakes__description .cakes__nadpis {
+    font-size: 30px;
+  }
+}
+
+.cakes__description--paragr {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+@media screen and (max-width: 640px) {
+  .cakes__description--paragr {
+    font-size: 14px;
+  }
+}
+
+.cake {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #C9C8C8;
+  overflow: hidden;
+}
+@media screen and (max-width: 640px) {
+  .cake {
+    padding: 10px;
+  }
+}
+.cake h3 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 640px) {
+  .cake h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
+.cake p {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.cake__image {
+  background-image: #d0d9d6;
+  margin: auto;
+  width: 100%;
+}
+.cake__image:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media screen and (max-width: 640px) {
+  .cake__image:active {
+    transform: none;
+  }
+}
+
+.cake__buttons {
+  display: flex;
+  border-radius: 10px;
+  font-weight: 600;
+  justify-content: space-around;
+  margin: 0 0 15px 0;
+}
+
+.cena {
+  flex: 0 1 auto;
+  font-size: 14px;
+  padding: 5px 15px;
+  background-color: #d0d9d6;
+  text-align: right;
+  margin: 0;
+}
+
+.objednat {
+  padding: 5px 15px;
+  background-color: #6c8280;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.objednat:hover {
+  color: #2b2b2b;
+}
+
+.cakes__detske {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  padding: 30px 120px;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .cakes__detske {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    gap: 10px;
+  }
+}
+.cakes__detske a {
+  text-decoration: none;
+}
+
+.cakes__svatba {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  padding: 30px 120px;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .cakes__svatba {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    gap: 10px;
+  }
+}
+.cakes__svatba a {
+  text-decoration: none;
+}
+
+.cakes__vyroci {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  padding: 30px 120px;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .cakes__vyroci {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    gap: 10px;
+  }
+}
+.cakes__vyroci a {
+  text-decoration: none;
+}
+
+.svatba__navod {
+  margin-bottom: 40px;
+  padding: 0 120px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 640px) {
+  .svatba__navod {
+    margin-bottom: 20px;
+    padding: 0 40px;
+  }
+}
+.svatba__navod p {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+@media screen and (max-width: 640px) {
+  .svatba__navod p {
+    font-size: 14px;
+  }
+}
+
+.svatba__kontakt {
+  text-decoration: none;
+  color: #987092;
+}
+
+.svatba__item {
+  padding: 0 120px 30px 120px;
+  margin-bottom: 60px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item {
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }
+}
+.svatba__item h2 {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 400;
+  font-family: "Grand Hotel", cursive;
+  font-size: 36px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item h2 {
+    padding-top: 0;
+    font-size: 30px;
+    margin: 0;
+  }
+}
+.svatba__item h3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.svatba__item p {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item p {
+    font-size: 14px;
+  }
+}
+
+.svatba__item--cakes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.svatba__item--cakes li {
+  list-style: none;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item--cakes li {
+    font-size: 14px;
+  }
+}
+
+.svatba__item--corpus,
+.svatba__item--cream,
+.svatba__item--decorate {
+  text-align: center;
+  line-height: 2;
+}
+@media screen and (max-width: 640px) {
+  .svatba__item--corpus,
+.svatba__item--cream,
+.svatba__item--decorate {
+    line-height: 1.8;
+  }
+}
+
+.svatba__dorty {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__dorty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.svatba__dort--item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+  box-shadow: 2px 2px 5px #C9C8C8;
+}
+@media screen and (max-width: 640px) {
+  .svatba__dort--item {
+    padding: 7px;
+  }
+}
+.svatba__dort--item img {
+  background-image: #d0d9d6;
+  margin: auto;
+  width: 100%;
+}
+
+.svatba__cukrovi {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__cukrovi {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+.svatba__cukrovi--item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+  box-shadow: 2px 2px 5px #C9C8C8;
+}
+@media screen and (max-width: 640px) {
+  .svatba__cukrovi--item {
+    padding: 7px;
+  }
+}
+.svatba__cukrovi--item img {
+  background-image: #d0d9d6;
+  margin: auto;
+  width: 100%;
+}
+.svatba__cukrovi--item h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+.svatba__cukrovi--item p {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.svatba__zakusky {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__zakusky {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+.svatba__zakusky .svatba__zakusky--item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px #C9C8C8;
+}
+@media screen and (max-width: 640px) {
+  .svatba__zakusky .svatba__zakusky--item {
+    padding: 10px;
+    border-radius: 13px;
+  }
+}
+.svatba__zakusky .svatba__zakusky--item img {
+  background-image: #d0d9d6;
+  margin: auto;
+  width: 100%;
+}
+.svatba__zakusky .svatba__zakusky--item h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+.svatba__zakusky .svatba__zakusky--item p {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.svatba__kolace {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 640px) {
+  .svatba__kolace {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+.svatba__kolace .svatba__kolace--item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px #C9C8C8;
+}
+@media screen and (max-width: 640px) {
+  .svatba__kolace .svatba__kolace--item {
+    padding: 10px;
+    border-radius: 13px;
+  }
+}
+.svatba__kolace .svatba__kolace--item img {
+  background-image: #d0d9d6;
+  margin: auto;
+  width: 100%;
+}
+.svatba__kolace .svatba__kolace--item h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+.svatba__kolace .svatba__kolace--item p {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.kontakt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #e8dfe1;
+}
+@media screen and (max-width: 640px) {
+  .kontakt {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.kontakt__udaje {
+  padding: 20px 120px 40px 120px;
+}
+
+.kontakt__nadpis {
+  font-size: 36px;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.kontakt__adresa {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.kontakt__description {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.line {
+  height: 2px solid red;
+}
+
+.kontakt__questions {
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+/*.formular {
+    padding: 0 120px;
+    margin-bottom: 40px;
+
+    p {
+        padding-bottom: 20px;
+    }
+}*/
+.mapa {
+  padding-top: 20px;
+}
+.mapa h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+}
+
+.mapa__activ {
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+}
+
+.menu__nabidka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 120px 30px 120px;
+  align-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: #e8dfe1;
+}
+@media screen and (max-width: 640px) {
+  .menu__nabidka {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 60px;
+  }
+}
+.menu__nabidka a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.menu__item {
+  position: relative;
+  overflow: hidden;
+}
+.menu__item:hover .menu__description {
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.menu__image {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu__image:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.menu__description {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  text-align: center;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  padding: 5px 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer {
+  background-color: #6c8280;
+  color: #d0d9d6;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 40px 0;
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 20px 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  max-width: 1440px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fdf7f8;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+.header__background {
+  background-image: url(/images/uvod_hero.jpg);
+  padding: 180px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #987092;
+}
+.header__background .header {
+  margin: 0;
+  position: relative;
+}
+.header__background .header h1 {
+  position: absolute;
+  font-family: "Grand Hotel", cursive;
+  top: 5%;
+  left: 5%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  font-weight: 400;
+}
+.header__background .header h2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-family: "Grand Hotel", cursive;
+  color: white;
+  margin: 0;
+  text-align: right;
+  font-size: 36px;
+  font-weight: 400;
+}
+.header__background .header img {
+  margin: 0;
+  position: absolute;
+  width: 160px;
+  top: 28%;
+  left: 45%;
+}
+
+.hero__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 120px 30px 120px;
+  gap: 60px;
+  margin: 30px 0;
+  width: 100%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 640px) {
+  .hero__menu {
+    padding: 20px;
+    gap: 10px;
+    margin: 0;
+  }
+}
+.hero__menu a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+}
+.hero__menu li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 50px;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+  color: #2b2b2b;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .hero__menu li {
+    font-size: 36px;
+    padding: 0;
+  }
+}
+.hero__menu li:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #987092;
+          text-decoration-color: #987092;
+  text-underline-offset: 10px;
+}
+
+.error {
+  margin: 0;
+  width: auto;
+  margin: 40px;
+}
+.error p {
+  font-size: 48px;
+  font-family: "Grand Hotel", cursive;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.error img {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  margin: 0;
+  margin-bottom: 60px;
+  justify-content: space-around;
+  max-width: 100%;
+  padding: 20px 120px 0 120px;
+}
+@media screen and (max-width: 640px) {
+  .button {
+    padding: 20px 60px;
+    margin-bottom: 20px;
+  }
+}
+.button a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.button a:hover {
+  color: white;
+}
+
+.button__facebook {
+  background-color: #d0d9d6;
+  font-size: 14px;
+  flex: 1 1 auto;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 640px) {
+  .button__facebook {
+    margin-right: 10px;
+    border-radius: 30px;
+  }
+}
+.button__facebook:hover {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #6c8280;
+}
+
+.button__instagram {
+  background-color: #d0d9d6;
+  font-size: 14px;
+  flex: 1 1 auto;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 640px) {
+  .button__instagram {
+    margin-left: 10px;
+    border-radius: 30px;
+  }
+}
+.button__instagram:hover {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #6c8280;
+  color: white;
+}
+
+.doba {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #2b2b2b;
+  text-align: left;
+  line-height: 1.6;
+  background-color: #e8dfe1;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 20px 120px 20px 120px;
+}
+@media screen and (max-width: 640px) {
+  .doba {
+    padding: 20px 60px;
+    margin-bottom: 20px;
+  }
+}
+.doba h3 {
+  margin-bottom: 5px;
+}
+.doba .doba__adresa {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 640px) {
+  .doba .doba__adresa {
+    font-size: 14px;
+  }
+}
+.doba .doba__description {
+  margin-bottom: 10px;
+  flex: 1 1 50%;
+  flex-wrap: nowrap;
+}
+.doba .doba__mapa {
+  padding: 10px;
+  flex: 1 1 auto;
+  background-color: #c2a2c0;
+  text-align: center;
+  font-size: 14px;
+  flex-wrap: nowrap;
+  margin: 0;
+  border-radius: 30px;
+  width: 30%;
+}
+.doba .doba__mapa:hover {
+  background-color: #987092;
+}
+.doba .doba__mapa a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.doba .doba__mapa a:hover {
+  font-weight: 600;
+}
+.doba .doba__open {
+  flex: 0 1 50%;
+}
+.doba .doba__open .doba__time {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 640px) {
+  .doba .doba__open .doba__time {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.actual {
+  color: #2b2b2b;
+  padding: 20px 120px 0 120px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .actual {
+    padding: 20px 60px;
+    margin-bottom: 20px;
+  }
+}
+.actual h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero__menu--shadow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 30px;
+  padding: 0 120px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 640px) {
+  .hero__menu--shadow {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 0 40px;
+  }
+}
+.hero__menu--shadow a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+}
+.hero__menu--shadow li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Grand Hotel", cursive;
+  color: #2b2b2b;
+  text-align: center;
+  color: #858284;
+}
+@media screen and (max-width: 640px) {
+  .hero__menu--shadow li {
+    padding: 0;
+    font-size: 30px;
+  }
+}
+.hero__menu--shadow li:hover {
+  color: #2b2b2b;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #987092;
+          text-decoration-color: #987092;
+  text-underline-offset: 10px;
+}
+
+.menu__nabidka--section {
+  background-color: #e8dfe1;
+  padding: 30px 120px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .menu__nabidka--section {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.menu__nabidka--small {
+  display: flex;
+  justify-content: space-around;
+}
+.menu__nabidka--small a {
+  font-weight: 600;
+}
+
+.menu__item--small {
+  padding: 10px 20px;
+  background-color: #c2a2c0;
+  border-radius: 30px;
+}
+.menu__item--small:hover {
+  background-color: #987092;
+  font-weight: 600;
+}
+.menu__item--small a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #2b2b2b;
+}
+@media screen and (max-width: 640px) {
+  .menu__item--small a {
+    font-size: 16px;
+  }
+}
+.menu__item--small a:hover {
+  color: white;
+}
+
+.menu__nabidka--dorty {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 20px;
+}
+@media screen and (max-width: 640px) {
+  .menu__nabidka--dorty {
+    margin-top: 10px;
+  }
+}
+.menu__nabidka--dorty li {
+  list-style: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 640px) {
+  .menu__nabidka--dorty li {
+    font-size: 14px;
+  }
+}
+.menu__nabidka--dorty .menu__nabidka--item:hover {
+  font-weight: 600;
+}
+.menu__nabidka--dorty a {
+  text-decoration: none;
+  color: #858284;
+  font-size: 20px;
+}
+.menu__nabidka--dorty a:hover {
+  color: #2b2b2b;
+}
+
+.menu__svatba {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 120px;
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .menu__svatba {
+    padding: 0 40px;
+    align-content: center;
+  }
+}
+.menu__svatba li {
+  list-style: none;
+}
+.menu__svatba a {
+  text-decoration: none;
+  color: #858284;
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .menu__svatba a {
+    font-size: 16px;
+  }
+}
+.menu__svatba a:hover {
+  color: #2b2b2b;
+}
+.menu__svatba .menu__svatba--item {
+  margin: 0 10px;
+}
+.menu__svatba:hover {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

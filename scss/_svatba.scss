@@ -1,0 +1,254 @@
+@use 'button';
+@use 'colours';
+
+.svatba__navod {
+    margin-bottom: 40px;
+    padding: 0 120px;
+    line-height: 1.5;
+
+    @media screen and (max-width: 640px) {
+        margin-bottom: 20px;
+        padding: 0 40px;
+    }
+
+    p {
+        padding-bottom: 10px;
+        font-weight: 600;
+
+            @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.svatba__kontakt {
+    text-decoration: none;
+    color: colours.$colour-hover;
+}
+
+.svatba__item {
+    padding: 0 120px 30px 120px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+
+    @media screen and (max-width: 640px) {
+        padding: 0 40px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        font-weight: 400;
+        font-family: colours.$font-motto;
+        font-size: 36px;
+
+        @media screen and (max-width: 640px) {
+            padding-top: 0;
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        padding-top: 20px;
+
+        @media screen and (max-width: 640px) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+        
+        @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.svatba__item--cakes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    li {
+        list-style: none;
+
+        @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.svatba__item--corpus,
+.svatba__item--cream,
+.svatba__item--decorate {
+    text-align: center;
+    line-height: 2;
+
+    @media screen and (max-width: 640px) {
+        line-height: 1.8;
+    }
+}
+
+.svatba__dorty {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+.svatba__dort--item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 2px 2px 5px #C9C8C8;
+
+    @media screen and (max-width: 640px) {
+        padding: 7px;
+    }
+
+    img {
+        background-image: colours.$footer-colour;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.svatba__cukrovi {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+.svatba__cukrovi--item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 2px 2px 5px #C9C8C8;
+
+    @media screen and (max-width: 640px) {
+        padding: 7px;
+    }
+
+    img {
+        background-image: colours.$footer-colour;
+        margin: auto;
+        width: 100%;
+    }
+
+    h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+
+    p {
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+.svatba__zakusky {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .svatba__zakusky--item {
+        background-color: white;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+
+        @media screen and (max-width: 640px) {
+            padding: 10px;
+            border-radius: 13px;
+        }
+
+        img {
+            background-image: colours.$footer-colour;
+            margin: auto;
+            width: 100%;
+        }
+        
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.svatba__kolace {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .svatba__kolace--item {
+        background-color: white;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 2px 2px 5px #C9C8C8;
+
+        @media screen and (max-width: 640px) {
+            padding: 10px;
+            border-radius: 13px;
+        }
+    
+        img {
+            background-image: colours.$footer-colour;
+            margin: auto;
+            width: 100%;
+        }
+        
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+}

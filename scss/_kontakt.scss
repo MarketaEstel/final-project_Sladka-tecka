@@ -1,0 +1,71 @@
+@use 'button';
+@use 'colours';
+
+.kontakt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: colours.$button-purple-colour-light;
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.kontakt__udaje {
+    padding: 20px 120px 40px 120px;
+}
+
+.kontakt__nadpis {
+    font-size: 36px;
+    font-family: colours.$font-motto;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.kontakt__adresa {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.kontakt__description {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.line {
+    height: 2px solid red;
+    
+}
+
+.kontakt__questions {
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+/*.formular {
+    padding: 0 120px;
+    margin-bottom: 40px;
+
+    p {
+        padding-bottom: 20px;
+    }
+}*/
+
+.mapa {
+    padding-top: 20px;
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-family: colours.$font-motto;
+        font-weight: 400;
+    }
+}
+.mapa__activ {
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+}

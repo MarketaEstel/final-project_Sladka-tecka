@@ -1,48 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
-    
-    <title>Sladká tečka</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+---
+layout: layouts/hlavni-sablona.njk
+title: Sladká tečka
+---   
 
-</head>
-<body>
+{% include 'partials/hero-menu-shadow.njk' %}
 
-<header class="header">
-    <div class="header__background"></div>
-    <h1 class="header__motto">Jsme cukrářství s tradičními zákusky a dorty</h1>
-    <h2 class="header__podpis">Cukrářství Kateřina Jelínková</h2>
-    <img class="header__logo" src="images/logo_sladka_tecka.svg" alt="logo">
-</header>   
-
-<ul class="hero__menu--shadow">
-    <a href="#">
-        <div class="hero__item">
-            <li>O nás</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Fotogalerie</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Kontakt</li>
-        </div>
-    </a>
-</ul>
+{% include 'partials/menu-zakusky.njk' %}
 
     <div class="onas">
 
@@ -50,10 +13,10 @@
             <div class="onas__description">
                 <h2 class="onas__nadpis">Majitelka cukrářství</h2>
                 <p class="onas__text"> 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing   elit. Cumque repellat maiores quibusdam distinctio id officia vel dolore suscipit. Voluptates, dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam ullam at ex placeat distinctio tempore aperiam ea est, necessitatibus saepe debitis enim perspiciatis nesciunt incidunt aspernatur cum minima ut!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque repellat maiores quibusdam distinctio id officia vel dolore suscipit. Voluptates, dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam ullam at ex placeat distinctio tempore aperiam ea est, necessitatibus saepe debitis enim perspiciatis nesciunt incidunt aspernatur cum minima ut!
                 </p>
             </div>
-                <img src="images/onas/cukrarka.jpg" alt="Majitelka cukrářství">
+                <img src="/images/onas/cukrarka.jpg" alt="Majitelka cukrářství">
         </div>  
 
     <div class="onas__interiery">
@@ -63,10 +26,10 @@
                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde a vitae nobis deleniti ipsum similique. Vero exercitationem minima, iusto sed, quam esse dolorum totam deserunt beatae voluptas eius hic. Hic eum incidunt dolore rerum illo nesciunt veniam ducimus voluptatibus. Inventore odio aperiam illum aspernatur repellendus eos iusto doloremque obcaecati totam fuga, impedit porro blanditiis? Ducimus at et nemo ut suscipit.
             </p>
         </div>    
-                <img src="images/onas/cukrarna01.jpg" alt="cukrárna">
-                <img src="images/onas/cukrarna02.jpg" alt="cukrárna">
-                <img src="images/onas/cukrarna03.jpg" alt="cukrárna">
-                <img src="images/onas/cukrarna04.jpg" alt="cukrárna">
+                <img src="/images/onas/cukrarna01.jpg" alt="cukrárna">
+                <img src="/images/onas/cukrarna02.jpg" alt="cukrárna">
+                <img src="/images/onas/cukrarna03.jpg" alt="cukrárna">
+                <img src="/images/onas/cukrarna04.jpg" alt="cukrárna">
             
     </div>
 
@@ -79,7 +42,7 @@
                 </p>
         </div>
 
-        <img class="onas__foto" src="images/onas/cukrarka_veronika.jpg" alt="Cukrářka veronika">    
+        <img class="onas__foto" src="/images/onas/cukrarka_veronika.jpg" alt="Cukrářka veronika">    
 
         <div class="onas__clen--martina">
         <h3 class="onas__tym--clenove">Martina</h3>
@@ -88,18 +51,17 @@
             </p>
         </div>    
 
-        <img class="onas__foto" src="images/onas/cukrarka_martina.jpg" alt="cukrářka martina">    
+        <img class="onas__foto" src="/images/onas/cukrarka_martina.jpg" alt="cukrářka martina">    
        </div>
+    
+       <div class="button__homeandup">
+        <div class="button__home">
+            <a href="#">Úvod</a> 
+        </div>
+    
+        <div class="button__up">
+            <a href="#hero_shadow">Nahoru</a> 
+        </div>
     </div>
-
-
-
-<footer class="footer">
-    <p class="footer_text"> © Cukrářská výroba Sladká tečka, design Markéta Estel Matysová <br>
-    SladkaTecka@gmail.com <br>
-    777 666 555, 777 888 999 <br>
-    Brno-Žebětín, Drdy 46, 614 00 </p>
-</footer>
-        
-</body>
-</html>    
+    
+    </div>  

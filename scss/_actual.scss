@@ -1,0 +1,18 @@
+@use 'colours';
+
+.actual {
+    color: colours.$font-colour;
+    padding: 20px 120px 0 120px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 640px) {
+      padding: 20px 60px;
+      margin-bottom: 20px;
+    }
+        
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+    }
+}

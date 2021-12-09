@@ -1,0 +1,70 @@
+@use 'colours';
+
+.button {
+    display: flex;
+    margin: 0;
+    margin-bottom: 60px;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 20px 120px 0 120px;
+
+    @media screen and (max-width: 640px) {
+        padding: 20px 60px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: colours.$font-colour;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.button__facebook {
+    background-color: colours.$button-colour;
+    font-size: 14px;
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin-right: 30px;
+    border-radius: 20px;
+
+    @media screen and (max-width: 640px) {
+        margin-right: 10px;
+        border-radius: 30px;
+    }
+
+    &:hover {
+        font-size: 14px;
+        font-weight: 600;
+        background-color: colours.$button-hover;
+    }
+}
+
+.button__instagram {
+    background-color: colours.$button-colour;
+    font-size: 14px;
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 30px;
+    border-radius: 20px;
+
+    @media screen and (max-width: 640px) {
+        margin-left: 10px;
+        border-radius: 30px;
+    }
+
+    &:hover {
+        font-size: 14px;
+        font-weight: 600;
+        background-color: colours.$button-hover;
+        color: white;
+    }
+}
+

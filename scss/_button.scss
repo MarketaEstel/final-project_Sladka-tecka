@@ -1,0 +1,74 @@
+@use 'colours';
+
+.button__homeandup {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 20px 120px 0 120px;
+
+    @media screen and (max-width: 640px) {
+        margin-bottom: 40px;
+        padding: 0 40px;
+    }
+}
+
+.button__home {
+    background-color: colours.$button-colour;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+
+    &:hover {
+        background-color: colours.$button-hover;
+        
+        @media screen and (max-width: 640px){
+            &:active {
+                background-color: colours.$button-hover;
+            }
+        }
+    }    
+    
+    a {
+        text-decoration: none;
+        color: colours.$font-colour;
+        font-weight: 600;
+
+        @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.button__up {
+    background-color: colours.$button-colour;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+
+    &:hover {
+        background-color: colours.$button-hover;
+
+        @media screen and (max-width: 640px){
+            &:active {
+                background-color: colours.$button-hover;
+        }
+    }   
+} 
+    
+    a {
+        text-decoration: none;
+        color: colours.$font-colour;
+        font-weight: 600;
+
+        @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+    
+        &:hover {
+            color: white;
+        }
+    } 
+}

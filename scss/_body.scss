@@ -1,0 +1,14 @@
+@use 'colours';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    max-width: 1440px;
+    font-family: colours.$font-base;
+    background-color: colours.$bcg-colour;
+}

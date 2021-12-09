@@ -1,0 +1,50 @@
+@use 'colours';
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+.header__background {
+    background-image: url(/images/uvod_hero.jpg);
+    padding: 180px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: colours.$colour-hover;
+        
+    .header {
+        margin: 0;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            font-family: colours.$font-motto;
+            top: 5%;
+            left: 5%;
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            font-family: colours.$font-motto;
+            color: white;
+            margin: 0;
+            text-align: right;
+            font-size: 36px;
+            font-weight: 400;
+        }
+
+        img {
+            margin: 0;
+            position: absolute;
+            width: 160px;
+            top: 28%;
+            left: 45%;
+        }
+    }
+}

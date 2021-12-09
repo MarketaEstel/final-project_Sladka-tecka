@@ -1,85 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
-    
-    <title>Sladká tečka</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+---
+layout: layouts/hlavni-sablona.njk
+title: Dorty
+---
 
-</head>
-<body>
+{% include 'partials/hero-menu-shadow.njk' %}
 
-<header class="header">
-    <div class="header__background">
-        <h1 class="header__motto">Jsme cukrářství s tradičními zákusky a dorty</h1>
-        <h2 class="header__podpis">Cukrářství Kateřina Jelínková</h2>
-    </div>
-    <img class="header__logo" src="images/logo_sladka_tecka.svg" alt="logo">
-</header>   
-
-<ul class="hero__menu--shadow">
-    <a href="#">
-        <div class="hero__item">
-            <li>O nás</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Fotogalerie</li>
-        </div>
-    </a>
-
-    <a href="#">
-        <div class="hero__item">
-            <li>Kontakt</li>
-        </div>
-    </a>
-</ul>
-
-<div class="menu__nabidka--section">
-    
-    <div class="menu__nabidka--small">
-        <div class="menu__item--small">
-            <a href="#">Dorty</a>
-        </div>
-
-        <div class="menu__item--small">    
-            <a href="#">Zákusky</a>
-        </div>
-
-        <div class="menu__item--small">
-            <a href="#">Svatba</a>
-    </div>
-</div>
-
-    <ul class="menu__nabidka--dorty">
-        <div class="menu__nabidka--item">
-            <a href="#"><li>Klasické</li></a>
-        </div>
-        
-        <div class="menu__nabidka--item">
-            <a href="#"><li>Dětské</li></a>
-        </div>
-        
-        <div class="menu__nabidka--item">
-            <a href="#"><li>Svatební</li></a>
-        </div>
-
-        <div class="menu__nabidka--item">
-            <a href="#"><li>Narozeninové</li></a>
-        </div>
-    </ul>
-
-</div>
+{% include 'partials/menu-cakes.njk' %}
     
 <div id="cakes_klasik" class="cakes__klasik">
     
@@ -91,81 +17,81 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort sacher.jpg" alt="Dort Sacher">
+        <img class="cake__image" src="/images/dorty/klasik/dort sacher.jpg" alt="Dort Sacher">
         <h3>Dort Sacher</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort misa.jpg" alt="Dort Míša">
+        <img class="cake__image" src="/images/dorty/klasik/dort misa.jpg" alt="Dort Míša">
         <h3>Dort Míša</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort_florida--small.jpg" alt="dort florida">
+        <img class="cake__image" src="/images/dorty/klasik/dort_florida--small.jpg" alt="dort florida">
         <h3>Dort Florida</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort lesni ovoce.jpg" alt="Dort lesní ovoce">
+        <img class="cake__image" src="/images/dorty/klasik/dort lesni ovoce.jpg" alt="Dort lesní ovoce">
         <h3>Dort se směsí lesního ovoce a plátky tmavé čokolády</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort jahodovy.jpg" alt="Dort jahodový">
+        <img class="cake__image" src="/images/dorty/klasik/dort jahodovy.jpg" alt="Dort jahodový">
         <h3>Dort jahodový s plátky čokolády</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/dort tropic.jpg" alt="Dort Tropic">
+        <img class="cake__image" src="/images/dorty/klasik/dort tropic.jpg" alt="Dort Tropic">
         <h3>Dort s tropickým ovocem</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/red_velvet.jpg" alt="Dort Red velvet">
+        <img class="cake__image" src="/images/dorty/klasik/red_velvet.jpg" alt="Dort Red velvet">
         <h3>Red velvet</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/klasik/smetanovy s vyberem ovoce.jpg" alt="Smetanový s výběrem ovoce">
+        <img class="cake__image" src="/images/dorty/klasik/smetanovy s vyberem ovoce.jpg" alt="Smetanový s výběrem ovoce">
         <h3>Smetanový dort s ovocem dle výběru</h3>
             <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
-                <a href=""><p class="objednat">objednat</p></a>
+                <a href="#"><p class="objednat">objednat</p></a>
             </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores.</p>
     </div>
@@ -177,7 +103,7 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
@@ -191,7 +117,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_angry_birds.jpg" alt="Dort Angry Birds">
+        <img class="cake__image" src="/images/dorty/detske/dort_angry_birds.jpg" alt="Dort Angry Birds">
         <h3>Angry Birds</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -201,7 +127,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_cerny_drak.jpg" alt="Dort jak zkrotit draka">
+        <img class="cake__image" src="/images/dorty/detske/dort_cerny_drak.jpg" alt="Dort jak zkrotit draka">
         <h3>Jak zkrotit draka</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -211,7 +137,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_myši.jpg" alt="Dort Ementál">
+        <img class="cake__image" src="/images/dorty/detske/dort_myši.jpg" alt="Dort Ementál">
         <h3>Myši v ementálu</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -221,7 +147,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_krokodyl--small.jpg" alt="Dort krokodýl">
+        <img class="cake__image" src="/images/dorty/detske/dort_krokodyl--small.jpg" alt="Dort krokodýl">
         <h3>Dort Krokodýl</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -231,7 +157,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_krtecek.jpg" alt="Dort krteček">
+        <img class="cake__image" src="/images/dorty/detske/dort_krtecek.jpg" alt="Dort krteček">
         <h3>Krteček</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -241,7 +167,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_srdce_hello_kitty--small.jpg" alt="Dort Hello kitty">
+        <img class="cake__image" src="/images/dorty/detske/dort_srdce_hello_kitty--small.jpg" alt="Dort Hello kitty">
         <h3>Hello Kitty</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -251,7 +177,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_farma--small.jpg" alt="Dort farma">
+        <img class="cake__image" src="/images/dorty/detske/dort_farma--small.jpg" alt="Dort farma">
         <h3>Farma</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -261,7 +187,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_harry_potter--small.jpg" alt="Dort harry potter">
+        <img class="cake__image" src="/images/dorty/detske/dort_harry_potter--small.jpg" alt="Dort harry potter">
         <h3>Harry Potter</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -271,7 +197,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_ledove_kralovstvi--small.jpg" alt="Dort ledové království">
+        <img class="cake__image" src="/images/dorty/detske/dort_ledove_kralovstvi--small.jpg" alt="Dort ledové království">
         <h3>Ledové království</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -281,7 +207,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/detske/dort_morska_vila--small.jpg" alt="Dort mořská víla">
+        <img class="cake__image" src="/images/dorty/detske/dort_morska_vila--small.jpg" alt="Dort mořská víla">
         <h3>Malá mořská víla</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -297,7 +223,7 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
@@ -311,7 +237,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatba01--small.jpg" alt="Dort svatebni">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatba01--small.jpg" alt="Dort svatebni">
         <h3>Spolu pod stanem</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -321,7 +247,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatba_chryzantemy--small.jpg" alt="Dort svatebni s chrazyntemami">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatba_chryzantemy--small.jpg" alt="Dort svatebni s chrazyntemami">
         <h3>S chryzantémami</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -331,7 +257,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/svatba_dort_ruzovy--small.jpg" alt="Dort svatebni s růžemi">
+        <img class="cake__image" src="/images/dorty/svatba/svatba_dort_ruzovy--small.jpg" alt="Dort svatebni s růžemi">
         <h3>S růžemi</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -341,7 +267,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatba_modry--small.jpg" alt="Dort svatebni s perlami">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatba_modry--small.jpg" alt="Dort svatebni s perlami">
         <h3>Modrý s perlami a iniciály</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -351,7 +277,7 @@
     </div>
     
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatebni_pinkandwhite--small.jpg" alt="Dort svatebni s ruzemi">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatebni_pinkandwhite--small.jpg" alt="Dort svatebni s ruzemi">
         <h3>S růžovými a bílými růžemi</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -361,7 +287,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatba_prirodni--small.jpg" alt="Dort prirodni">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatba_prirodni--small.jpg" alt="Dort prirodni">
         <h3>Přírodní s marcipánovými květy</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -371,7 +297,7 @@
     </div>
     
     <div class="cake">
-        <img class="cake__image" src="images/dorty/svatba/dort_svatebni_ruzovy--small.jpg" alt="Dort s ruzemi">
+        <img class="cake__image" src="/images/dorty/svatba/dort_svatebni_ruzovy--small.jpg" alt="Dort s ruzemi">
         <h3>S růžovými a krémovými růžemi</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -388,7 +314,7 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
 
@@ -402,7 +328,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_80--small.jpg" alt="Dort k osmdesatinam">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_80--small.jpg" alt="Dort k osmdesatinam">
         <h3>Osmdesáté narozeniny</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -412,7 +338,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_fiskars--small.jpg" alt="Dort Fiskars">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_fiskars--small.jpg" alt="Dort Fiskars">
         <h3>Fiskars k dvacetinám</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -422,7 +348,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_kachna_se_zelim--small.jpg" alt="Dort kucharovi">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_kachna_se_zelim--small.jpg" alt="Dort kucharovi">
         <h3>Dort Kachna se zelím</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -432,7 +358,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_kometa--small.jpg" alt="Dort kometa">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_kometa--small.jpg" alt="Dort kometa">
         <h3>Oslava hokejové Komety</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -442,7 +368,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_narozeniny03_galerie--small.jpg" alt="Dort zabijačka">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_narozeniny03_galerie--small.jpg" alt="Dort zabijačka">
         <h3>Zabijačka pro dědu</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -452,7 +378,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_ruze55--small.jpg" alt="Dort s ruzemi">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_ruze55--small.jpg" alt="Dort s ruzemi">
         <h3>Kulatý s růžemi pro maminku</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -462,7 +388,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_srdce_babicce--small.jpg" alt="Dort srdce">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_srdce_babicce--small.jpg" alt="Dort srdce">
         <h3>Srdce pro babičku</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -472,7 +398,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_vcelky--small.jpg" alt="Dort vceli plastev">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_vcelky--small.jpg" alt="Dort vceli plastev">
         <h3>Včelí plástev</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -482,7 +408,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_veterina--small.jpg" alt="Dort s motivem veteriny">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_veterina--small.jpg" alt="Dort s motivem veteriny">
         <h3>K promoci na veterině</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -492,7 +418,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/dort_coko_ovoce--small.jpg" alt="Dort smetanový s čokoládou a ovocem">
+        <img class="cake__image" src="/images/dorty/vyroci/dort_coko_ovoce--small.jpg" alt="Dort smetanový s čokoládou a ovocem">
         <h3>Dort smetanový s čokoládou a ovocem</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -502,7 +428,7 @@
     </div>
 
     <div class="cake">
-        <img class="cake__image" src="images/dorty/vyroci/red_velvet_rafaelo--small.jpg" alt="Dort red velvet s ovocema rafaelo">
+        <img class="cake__image" src="/images/dorty/vyroci/red_velvet_rafaelo--small.jpg" alt="Dort red velvet s ovocema rafaelo">
         <h3>Red velvet s ovocem a rafaelo</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -518,17 +444,6 @@
     </div>
 
     <div class="button__up">
-        <a href="#">Nahoru</a> 
+        <a href="#hero_shadow">Nahoru</a> 
     </div>
 </div>
-
-<footer class="footer">
-    <p class="footer_text"> © Cukrářská výroba Sladká tečka, design Markéta Estel Matysová <br>
-    SladkaTecka@gmail.com <br>
-    777 666 555, 777 888 999 <br>
-    Brno-Žebětín, Drdy 46, 614 00 </p>
-</footer>
-            
-        
-</body>
-</html>

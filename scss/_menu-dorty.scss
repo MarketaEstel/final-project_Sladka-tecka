@@ -1,0 +1,82 @@
+@use 'colours';
+
+.menu__nabidka--section {
+    background-color: colours.$button-purple-colour-light;
+    padding: 30px 120px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 640px) {
+        padding: 20px 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.menu__nabidka--small {
+    display: flex;
+    justify-content: space-around;
+        
+    a {
+        font-weight: 600;
+    }
+}
+
+.menu__item--small {
+    padding: 10px 20px;
+    background-color: colours.$button-purple-colour;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: colours.$colour-hover;
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 24px;
+        color: colours.$font-colour;
+
+        @media screen and (max-width: 640px) {
+            font-size: 16px;
+        }
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+.menu__nabidka--dorty {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 20px;
+
+    @media screen and (max-width: 640px) {
+        margin-top: 10px;
+    }
+    
+    li {
+        list-style: none;
+        font-size: 20px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 14px;
+        }
+    }
+
+    .menu__nabidka--item:hover {
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        color: colours.$font-colour-shadow;
+        font-size: 20px;
+        
+        &:hover {
+            color: colours.$font-colour;
+            }
+    }
+
+    
+}

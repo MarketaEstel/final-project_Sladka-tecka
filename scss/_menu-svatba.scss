@@ -1,0 +1,41 @@
+@use 'colours';
+
+.menu__svatba {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 120px;
+    margin-top: 20px;
+    width: 100%;
+
+    @media screen and (max-width: 640px) {
+        padding: 0 40px;
+        align-content: center;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: colours.$font-colour-shadow;
+        font-size: 20px;
+        text-align: center;
+
+        @media screen and (max-width: 640px) {
+            font-size: 16px;
+        }
+    
+    &:hover {
+        color: colours.$font-colour;
+        }
+    }
+
+    .menu__svatba--item {
+        margin: 0 10px;
+    }
+    
+    &:hover {
+        font-weight: 600;
+    }
+}

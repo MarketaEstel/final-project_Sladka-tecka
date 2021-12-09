@@ -1,0 +1,188 @@
+@use 'button';
+@use 'colours';
+
+.cakes__klasik {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    padding: 30px 120px;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.cakes__description {
+    grid-column: 1 / -1;
+
+    .cakes__nadpis {
+        font-size: 36px;
+        font-family: colours.$font-motto;
+        font-weight: 400;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.cakes__description--paragr {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+
+    @media screen and (max-width: 640px) {
+        font-size: 14px;
+    }
+}
+
+.cake {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #C9C8C8;
+    overflow: hidden;
+
+    @media screen and (max-width: 640px) {
+        padding: 10px;
+    }
+                
+    h3 {
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 640px) {
+            margin: 5px 0;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+.cake__image {
+    background-image: colours.$footer-colour;
+    margin: auto;
+    width: 100%;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: 640px) {
+        &:active {
+            transform: none;
+        }
+    }
+
+}
+
+.cake__buttons {
+    display: flex;
+    border-radius: 10px;
+    font-weight: 600;
+    justify-content: space-around;
+    margin: 0 0 15px 0;
+}
+
+.cena {
+    flex: 0 1 auto;
+    font-size: 14px;
+    padding: 5px 15px;
+    background-color: colours.$button-colour;
+    text-align: right;
+    margin: 0;
+}
+
+.objednat {
+    padding: 5px 15px;
+    background-color: colours.$button-hover;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+
+    &:hover {
+        color: colours.$font-colour;
+    }
+}
+.cakes__detske {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    padding: 30px 120px;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.cakes__svatba {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    padding: 30px 120px;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.cakes__vyroci {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    padding: 30px 120px;
+    gap: 20px;
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
