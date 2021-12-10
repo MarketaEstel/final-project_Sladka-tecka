@@ -5,6 +5,11 @@
     margin-bottom: 60px;
     padding: 20px 120px 0 120px;
 
+    @media screen and (max-width: 1080px) {
+        margin-bottom: 40px;
+        padding: 0 90px;
+    }
+
     @media screen and (max-width: 640px) {
         margin-bottom: 40px;
         padding: 0 40px;
@@ -20,6 +25,12 @@
     &:hover {
         background-color: colours.$button-hover;
         
+        @media screen and (max-width: 1080px) {
+            &:active {
+                background-color: colours.$button-hover;
+            }
+        }
+
         @media screen and (max-width: 640px){
             &:active {
                 background-color: colours.$button-hover;

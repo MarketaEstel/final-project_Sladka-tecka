@@ -1,13 +1,14 @@
 @use 'colours';
 
 .error {
-    margin: 0;
-    width: auto;
-    margin: 40px;
-    
+    margin: auto;
+    width: 30%;
+    padding-bottom: 60px;
+        
     p {
         font-size: 48px;
         font-family: colours.$font-motto;
+        color: colours.$colour-hover;
         margin-bottom: 40px;
         text-align: center;
     }

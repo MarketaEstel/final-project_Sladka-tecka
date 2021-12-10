@@ -1,8 +1,5 @@
 @use 'colours';
 
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
 .header__background {
     background-image: url(/images/uvod_hero.jpg);
     padding: 180px 30px;
@@ -10,41 +7,92 @@ html { box-sizing: border-box; }
     background-repeat: no-repeat;
     background-size: cover;
     background-color: colours.$colour-hover;
-        
-    .header {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1080px) {
+        padding: 150px 20px;
+    }  
+    
+    @media screen and (max-width: 640px) {
+        padding: 120px 20px;
+    }    
+
+    @media screen and (max-width: 450px) {
+        padding: 100px 10px;
+    }
+}
+
+.header {
+    margin: 0;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        font-family: colours.$font-motto;
+        top: 5%;
+        left: 5%;
+        text-align: center;
+        color: white;
+        font-size: 48px;
         margin: 0;
-        position: relative;
+        font-weight: 400;
 
-        h1 {
-            position: absolute;
-            font-family: colours.$font-motto;
-            top: 5%;
-            left: 5%;
-            text-align: center;
-            color: white;
-            font-size: 48px;
-            margin: 0;
-            font-weight: 400;
-        }
-
-        h2 {
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            font-family: colours.$font-motto;
-            color: white;
-            margin: 0;
-            text-align: right;
+        @media screen and (max-width: 1080px) {
             font-size: 36px;
-            font-weight: 400;
+        }
+        
+        @media screen and (max-width: 640px) {
+            display: none;
         }
 
-        img {
-            margin: 0;
-            position: absolute;
-            width: 160px;
-            top: 28%;
-            left: 45%;
+    }
+
+    h2 {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        font-family: colours.$font-motto;
+        color: white;
+        margin: 0;
+        text-align: right;
+        font-size: 36px;
+        font-weight: 400;
+
+        @media screen and (max-width: 1080px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    img {
+        margin: 0;
+        position: absolute;
+        width: 160px;
+        top: 28%;
+        left: 45%;
+
+        @media screen and (max-width: 1080px) {
+            width: 140px;
+            top: 25%;
+            left: 43%;
+        }
+
+        @media screen and (max-width: 640px) {
+            top: 15%;
+            left: 38%;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 120px;
+            top: 15%;
+            left: 38%;
         }
     }
 }

@@ -12,8 +12,12 @@
     margin-bottom: 60px;
     padding: 20px 120px 20px 120px;
 
+    @media screen and (max-width: 1080px) {
+        padding: 20px 60px;
+    }
+
     @media screen and (max-width: 640px) {
-      padding: 20px 60px;
+      padding: 20px 40px;
       margin-bottom: 20px;
     }
 
@@ -42,12 +46,14 @@
         flex: 1 1 auto;
         background-color: colours.$button-purple-colour;
         text-align: center;
-        font-size: 14px;
         flex-wrap: nowrap;
         margin: 0;
         border-radius: 30px;
         width: 30%;
-    
+
+        @media screen and (max-width: 640px) {
+            width: 25%;
+        }
 
         &:hover {
             background-color: colours.$colour-hover;
@@ -55,12 +61,18 @@
 
         a {
             text-decoration: none;
-            color: white;
+            color: colours.$font-motto;
             margin: 0;
             padding: 0;
+            font-size: 16px;
+
+            @media screen and (max-width: 640px) {
+                font-size: 14px;
+            }
 
             &:hover {
                 font-weight: 600;
+                color: white;
             }
         }
     }

@@ -9,14 +9,20 @@
     gap: 20px;
     margin-bottom: 20px;
     background-color: colours.$button-purple-colour-light;
+    width: 100%;
 
+    @media screen and (max-width: 1080px) {
+        padding: 20px 60px;
+    }
+    
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 20px 60px;
-        
+        padding: 20px 40px;
+        margin: auto;
     }
 
     a {
+        width: 100%;
         text-decoration: none;
         color: colours.$font-colour;
     }
@@ -25,7 +31,6 @@
 .menu__item {
     position: relative;
     overflow: hidden;
-
     
     &:hover {
         .menu__description {
@@ -59,8 +64,12 @@
     margin: 0;
     background-color: rgba(255, 255, 255, 0.5);
 
+    @media screen and (max-width: 1080px) {
+        font-size: 30px;
+    }
+
     @media screen and (max-width: 640px) {
-      
+        font-size: 24px;
     }
 
 }
