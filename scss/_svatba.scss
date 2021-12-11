@@ -6,8 +6,12 @@
     padding: 0 120px;
     line-height: 1.5;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 1080px) {
+        padding: 0 60px;
         margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
         padding: 0 40px;
     }
 
@@ -31,18 +35,28 @@
     margin-bottom: 60px;
     line-height: 1.5;
 
+    @media screen and (max-width: 1080px) {
+        padding: 0 60px;
+        margin-bottom: 40px;
+    }
+
     @media screen and (max-width: 640px) {
         padding: 0 40px;
         margin-bottom: 20px;
     }
 
-    h2 {
+    .svatba__nadpis--item {
         margin-bottom: 20px;
         padding-top: 20px;
         font-weight: 400;
         font-family: colours.$font-motto;
-        font-size: 36px;
+        font-size: 42px;
 
+        @media screen and (max-width: 1080px) {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+        
         @media screen and (max-width: 640px) {
             padding-top: 0;
             font-size: 30px;
@@ -50,16 +64,22 @@
         }
     }
 
-    h3 {
+    .svatba__item--nadpis {
         margin-bottom: 10px;
         padding-top: 20px;
+
+        @media screen and (max-width: 1080px) {
+            padding-top: 0;
+            margin-bottom: 0;
+        }
 
         @media screen and (max-width: 640px) {
             margin: 0;
             padding: 0;
+            font-size: 16px;
         }
     }
-    p {
+    .svatba__text {
         margin-bottom: 20px;
         
         @media screen and (max-width: 640px) {
@@ -79,6 +99,18 @@
         @media screen and (max-width: 640px) {
             font-size: 14px;
         }
+
+        @media screen and (max-width: 450px) {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-bottom: 10px;
     }
 }
 
@@ -89,20 +121,33 @@
     line-height: 2;
 
     @media screen and (max-width: 640px) {
-        line-height: 1.8;
+        line-height: 1.5;
     }
 }
 
 .svatba__dorty {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0;
     padding: 0;
     gap: 20px;
 
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(2, 1fr);
-        
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -131,9 +176,22 @@
     padding: 0;
     gap: 20px;
 
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 760px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -144,8 +202,8 @@
     margin: 0;
     box-shadow: 2px 2px 5px #C9C8C8;
 
-    @media screen and (max-width: 640px) {
-        padding: 7px;
+    @media screen and (max-width: 450px) {
+        padding: 5px;
     }
 
     img {
@@ -154,18 +212,26 @@
         width: 100%;
     }
 
-    h3 {
+    .svatba__cukrovi--nadpis {
         margin: 0;
         font-weight: 600;
         font-size: 14px;
         text-align: center;
-        padding: 0 0 10px 0;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 900px) {
+            padding: 0;
+        }
     }
 
-    p {
+    .svatba__cukrovi--popis {
         text-align: center;
         margin: 0;
         font-size: 12px;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
 }
 
@@ -174,9 +240,22 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 760px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .svatba__zakusky--item {
@@ -185,9 +264,18 @@
         padding: 15px;
         box-shadow: 2px 2px 5px #C9C8C8;
 
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 1080px) {
+            padding: 12px;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 900px) {
             padding: 10px;
-            border-radius: 13px;
+        }
+
+        @media screen and (max-width: 640px) {
+            padding: 8px;
+            border-radius: 10px;
         }
 
         img {
@@ -196,17 +284,21 @@
             width: 100%;
         }
         
-        h3 {
+        .svatba__zakusky--nadpis {
             margin: 0;
             font-weight: 600;
             font-size: 14px;
             text-align: center;
             padding: 0 0 10px 0;
         }
-        p {
+        .svatba__zakusky--popis {
             text-align: center;
             margin: 0;
             font-size: 12px;
+
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
         }
     }
 }
@@ -216,9 +308,22 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 760px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .svatba__kolace--item {
@@ -227,9 +332,18 @@
         padding: 15px;
         box-shadow: 2px 2px 5px #C9C8C8;
 
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 1080px) {
+            padding: 12px;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 900px) {
             padding: 10px;
-            border-radius: 13px;
+        }
+
+        @media screen and (max-width: 640px) {
+            padding: 8px;
+            border-radius: 10px;
         }
     
         img {
