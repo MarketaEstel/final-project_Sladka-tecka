@@ -9,9 +9,9 @@
     margin-bottom: 40px;
 
     @media screen and (max-width: 640px) {
-      grid-template-columns: repeat(1, 1fr);
-      margin-bottom: 20px;
-      gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+        gap: 10px;
     }
 }
 
@@ -43,7 +43,7 @@
 }
 
 .kontakt__adresa {
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 20px;
 
     @media screen and (max-width: 900px) {

@@ -7,7 +7,7 @@
 
     @media screen and (max-width: 1080px) {
         margin-bottom: 40px;
-        padding: 0 60px;
+        padding: 0 90px;
     }
 
     @media screen and (max-width: 640px) {
@@ -48,6 +48,12 @@
 
         &:hover {
             color: white;
+
+            @media screen and (max-width: 1080px){
+                &:active {
+                    color: white;
+                }
+            }
         }
     }
 }
@@ -83,6 +89,12 @@
     
         &:hover {
             color: white;
+
+            @media screen and (max-width: 1080px){
+                &:active {
+                    color: white;
+                }
+            }
         }
     } 
 }

@@ -26,10 +26,12 @@
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        margin-bottom: 40px;
     }
 
     @media screen and (max-width: 450px) {
         display: block;
+        margin-bottom: 20px;
     }
 
     img {
@@ -38,7 +40,23 @@
         border: 8px solid white;
         border-radius: 8px;
         box-shadow: 2px 2px 5px #C9C8C8;
-        }
+    }
+
+        .onas__majitelka--description {
+            grid-column: 1 / 4;
+
+            @media screen and (max-width: 1080px) {
+                grid-column: 1 / 3;
+            }
+
+            @media screen and (max-width: 640px) {
+                grid-column: 1 / 2;
+            }
+
+            @media screen and (max-width: 450px) {
+                display: block;
+            }
+    }
 }
 
 .onas__nadpis {
@@ -48,14 +66,13 @@
     font-family: colours.$font-motto;
     font-weight: 400;
     width: 100%;
-    grid-column: 1 / 2;
-
+    
     @media screen and (max-width: 900px) {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     @media screen and (max-width: 640px) {
-        grid-column: 1 / -1;
+        font-size: 28px;
     }
 
     @media screen and (max-width: 450px) {
@@ -91,10 +108,12 @@
     @media screen and (max-width: 640px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        margin-bottom: 40px;
     }
 
     @media screen and (max-width: 450px) {
         display: block;
+        margin-bottom: 20px;
     }
 
         img {
@@ -110,16 +129,19 @@
     }
 }
 
+.onas__interiery--description {
+    grid-column: 1 / -1;
+}
+
 .onas__tym {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-color: colours.$button-purple-colour-light;
     padding: 30px 120px;
     margin-bottom: 60px;
     gap: 20px;
 
     @media screen and (max-width: 1080px) {
-        grid-template-columns: repeat(3, 1fr);
         padding: 30px 90px;
     }
 
@@ -129,12 +151,29 @@
     }
 
     @media screen and (max-width: 640px) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        display: block;
+        margin-bottom: 40px;
     }
 
     @media screen and (max-width: 450px) {
         display: block;
+        margin-bottom: 20px;
+    }
+
+    .onas__tym--description {
+        grid-column: 1 / -1;
+    }
+
+    .onas__tym--clenove {
+        font-size: 24px;
+
+        @media screen and (max-width: 900px) {
+            font-size: 21px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+        }
     }
 
     img {
@@ -143,20 +182,32 @@
         border: 8px solid white;
         border-radius: 8px;
         box-shadow: 2px 2px 5px #C9C8C8;
+        margin: 0;
+        padding: 0;
 
-        @media screen and (max-width: 450px) {
-            margin-bottom: 10px;
+        @media screen and (max-width: 640px) {
+            width: 80%;
+            margin: auto;
         }
+        
+        @media screen and (max-width: 450px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .onas__clen--veronika {
+        grid-column: 1 / 2;
+    }
+
+    .onas__clen--martina {
+        grid-column: 2 / -1;
     }
 }
 
-.onas__tym--clenove {
-    font-size: 20px;
-    margin: 0;
-}
 
 .onas__description {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     font-size: 18px;
 
     @media screen and (max-width: 1080px) {
@@ -174,18 +225,5 @@
 
     @media screen and (max-width: 450px) {
         font-size: 12px;
-    }
-}
-
-.onas__clen--veronika,
-.onas__clen--martina {
-    grid-column: 1 / 4;
-
-    @media screen and (max-width: 1080px) {
-        grid-column: 1 / 3;
-    }
-
-    @media screen and (max-width: 900px) {
-        grid-column: 1 / 2;
     }
 }

@@ -10,8 +10,12 @@
 
 
     @media screen and (max-width: 1080px) {
-        padding: 15px 60px;
+        padding: 15px 90px;
         margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 15px 60px;
     }
 
     @media screen and (max-width: 640px) {
@@ -34,7 +38,6 @@
         }
     }
 }
-
 
 .button__facebook {
     background-color: colours.$button-colour;
