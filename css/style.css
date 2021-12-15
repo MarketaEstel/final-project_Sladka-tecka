@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button__homeandup {
   display: flex;
   margin-bottom: 60px;
@@ -103,6 +104,7 @@
   background-color: #e8dfe1;
   padding: 30px 120px;
   margin-bottom: 60px;
+  margin-top: 30px;
   gap: 20px;
 }
 @media screen and (max-width: 1080px) {
@@ -287,18 +289,27 @@
   }
 }
 .onas__tym img {
-  width: 100%;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 8px solid white;
   border-radius: 8px;
   box-shadow: 2px 2px 5px #C9C8C8;
-  margin: 0;
+  margin: auto;
   padding: 0;
+}
+@media screen and (max-width: 1080px) {
+  .onas__tym img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .onas__tym img {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 640px) {
   .onas__tym img {
-    width: 80%;
     margin: auto;
   }
 }
@@ -1598,6 +1609,7 @@ body {
 
 .error {
   margin: auto;
+  margin-top: 60px;
   width: 30%;
   padding-bottom: 60px;
 }
@@ -1943,162 +1955,258 @@ body {
   }
 }
 
-.menu__nabidka--section {
-  background-color: #e8dfe1;
-  padding: 30px 120px;
-  margin-bottom: 60px;
-}
-@media screen and (max-width: 1080px) {
-  .menu__nabidka--section {
-    padding: 20px 60px;
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .menu__nabidka--section {
-    padding: 15px 40px;
-    margin-bottom: 20px;
-  }
-}
-
-.menu__nabidka--small {
+.menu__small {
   display: flex;
   justify-content: space-around;
-}
-
-.menu__item--small {
-  padding: 10px 20px;
-  background-color: #c2a2c0;
-  border-radius: 30px;
-}
-.menu__item--small:hover {
-  background-color: #987092;
+  flex: 0 1 auto;
+  padding: 10px 120px;
+  margin: 0;
+  background-color: #e8dfe1;
+  list-style: none;
 }
 @media screen and (max-width: 1080px) {
-  .menu__item--small:hover:active {
-    background-color: #987092;
-  }
-}
-@media screen and (max-width: 640px) {
-  .menu__item--small {
-    padding: 8px 16px;
-  }
-}
-.menu__item--small .menu__odkaz {
-  text-decoration: none;
-  font-size: 24px;
-  color: #2b2b2b;
-  font-weight: 600;
-}
-.menu__item--small .menu__odkaz:hover {
-  color: white;
-  font-weight: 600;
-}
-@media screen and (max-width: 1080px) {
-  .menu__item--small .menu__odkaz:hover:active {
-    color: white;
-    font-weight: 600;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .menu__item--small .menu__odkaz {
-    font-size: 20px;
+  .menu__small {
+    padding: 10px 90px;
   }
 }
 @media screen and (max-width: 900px) {
-  .menu__item--small .menu__odkaz {
+  .menu__small {
+    padding: 10px 60px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu__small {
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu__small {
+    padding: 10px 20px;
+  }
+}
+
+.menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+    font-size: 18px;
+  }
+}
+.menu__mainitem--dorty a,
+.menu__mainitem--zakusky a {
+  text-decoration: none;
+  color: #c2a2c0;
+}
+.menu__mainitem--dorty a:hover,
+.menu__mainitem--zakusky a:hover {
+  color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .menu__mainitem--dorty a:hover:active,
+.menu__mainitem--zakusky a:hover:active {
+    color: #987092;
+  }
+}
+
+.menu__mainitem--zakusky {
+  font-size: 30px;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .menu__mainitem--zakusky {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu__mainitem--zakusky {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu__mainitem--zakusky {
+    font-size: 18px;
+  }
+}
+.menu__mainitem--zakusky a {
+  text-decoration: none;
+  color: white;
+}
+
+.submenu__cakes {
+  display: flex;
+  padding: 0 120px 20px 120px;
+  justify-content: start;
+  background-color: #e8dfe1;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1080px) {
+  .submenu__cakes {
+    padding: 0 90px 20px 90px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .submenu__cakes {
+    padding: 0 60px 10px 60px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submenu__cakes {
+    padding: 0 40px 10px 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .submenu__cakes {
+    padding: 0 20px 10px 20px;
+  }
+}
+.submenu__cakes a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .submenu__cakes a {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 640px) {
-  .menu__item--small .menu__odkaz {
+  .submenu__cakes a {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 450px) {
-  .menu__item--small .menu__odkaz {
+  .submenu__cakes a {
     font-size: 14px;
+    padding: 5px;
+  }
+}
+.submenu__cakes a:hover {
+  color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .submenu__cakes a:hover:active {
+    color: #987092;
   }
 }
 
-.menu__nabidka--dorty {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  margin-top: 20px;
-}
-@media screen and (max-width: 640px) {
-  .menu__nabidka--dorty {
-    display: none;
-  }
-}
-.menu__nabidka--dorty li {
-  list-style: none;
-  font-size: 20px;
-}
-@media screen and (max-width: 640px) {
-  .menu__nabidka--dorty li {
-    font-size: 14px;
-  }
-}
-.menu__nabidka--dorty .menu__nabidka--item:hover {
-  font-weight: 600;
-}
-.menu__nabidka--dorty .menu__nabidka--odkaz {
-  text-decoration: none;
-  color: #858284;
-  font-size: 20px;
-}
-.menu__nabidka--dorty .menu__nabidka--odkaz:hover {
+.menu__mainitem--dorty a:hover a .submenu__cakes {
   color: #2b2b2b;
 }
-@media screen and (max-width: 1080px) {
-  .menu__nabidka--dorty .menu__nabidka--odkaz:hover:active {
-    color: #2b2b2b;
-  }
-}
 
-.menu__svatba {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  margin-top: 20px;
-  width: 100%;
-}
-@media screen and (max-width: 640px) {
-  .menu__svatba {
-    display: none;
-  }
-}
-.menu__svatba li {
-  list-style: none;
-}
-.menu__svatba li:hover {
+.menu__mainitem--svatba {
+  /*položky dorty, zákusky, svatba - li*/
+  font-size: 30px;
   font-weight: 600;
 }
-@media screen and (max-width: 1080px) {
-  .menu__svatba li:hover:active {
-    font-weight: 600;
+@media screen and (max-width: 900px) {
+  .menu__mainitem--svatba {
+    font-size: 26px;
   }
 }
-
-.menu__svatba--a {
-  text-decoration: none;
-  color: #858284;
-  font-size: 20px;
-  text-align: center;
+@media screen and (max-width: 640px) {
+  .menu__mainitem--svatba {
+    font-size: 22px;
+  }
 }
-.menu__svatba--a:hover {
-  color: #2b2b2b;
+@media screen and (max-width: 450px) {
+  .menu__mainitem--svatba {
+    font-size: 18px;
+  }
+}
+.menu__mainitem--svatba a {
+  text-decoration: none;
+  color: #c2a2c0;
+}
+.menu__mainitem--svatba a:hover {
+  color: #987092;
+}
+.menu__mainitem--svatba a:hover:active {
+  color: #987092;
+}
+
+.submenu__svatba {
+  display: flex;
+  padding: 0 120px 20px 120px;
+  justify-content: end;
+  background-color: #e8dfe1;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 1080px) {
-  .menu__svatba--a:active {
-    color: #2b2b2b;
+  .submenu__svatba {
+    padding: 0 90px 20px 90px;
   }
 }
 @media screen and (max-width: 900px) {
-  .menu__svatba--a {
+  .submenu__svatba {
+    padding: 0 60px 10px 60px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submenu__svatba {
+    padding: 0 40px 10px 40px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .submenu__svatba {
+    padding: 0 20px 10px 20px;
+    margin-bottom: 30px;
+  }
+}
+.submenu__svatba a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .submenu__svatba a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submenu__svatba a {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .submenu__svatba a {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+.submenu__svatba a:hover {
+  color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .submenu__svatba a:hover:active {
+    color: #987092;
   }
 }
 

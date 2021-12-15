@@ -1,48 +1,91 @@
 @use 'colours';
 
-.menu__svatba {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin-top: 20px;
-    width: 100%;
+.menu__mainitem--svatba { /*položky dorty, zákusky, svatba - li*/
+    font-size: 30px;
+    font-weight: 600;
+
+    @media screen and (max-width: 900px) {
+        font-size: 26px;
+    }
 
     @media screen and (max-width: 640px) {
-        display: none;
+        font-size: 22px;
     }
-    
-    li {
-        list-style: none;
+
+    @media screen and (max-width: 450px) {
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        color: colours.$button-purple-colour;
         
         &:hover {
-            font-weight: 600;
-
-            @media screen and (max-width: 1080px) {
-                &:active {
-                    font-weight: 600;
+            color: colours.$colour-hover;
+            &:active {
+                color: colours.$colour-hover;
                 }
-            }
         }
     }
 }
 
-.menu__svatba--a {
+.submenu__svatba {
+    display: flex;
+    padding: 0 120px 20px 120px;
+    justify-content: end;
+    background-color: colours.$button-purple-colour-light;
+    font-size: 18px;
+    list-style: none;
     text-decoration: none;
-    color: colours.$font-colour-shadow;
-    font-size: 20px;
-    text-align: center;
-
-    &:hover {
-    color: colours.$font-colour;
-    }
+    overflow: hidden;
+    margin-bottom: 60px;
 
     @media screen and (max-width: 1080px) {
-        &:active {
-            color: colours.$font-colour;
-        }
+        padding: 0 90px 20px 90px;
     }
 
     @media screen and (max-width: 900px) {
-        font-size: 16px;
+        padding: 0 60px 10px 60px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 0 40px 10px 40px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 0 20px 10px 20px;
+        margin-bottom: 30px;
+    }
+        
+    a {
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: 20px;
+        color: white;
+
+        @media screen and (max-width: 900px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        &:hover {
+            color: colours.$colour-hover;
+            
+            @media screen and (max-width: 1080px) { 
+                &:active {
+                    color: colours.$colour-hover;
+                }
+            }
+        }
     }
 }
