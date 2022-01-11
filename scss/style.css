@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button__homeandup {
   display: flex;
   margin-bottom: 60px;
@@ -19,56 +20,54 @@
 
 .button__home {
   background-color: #d0d9d6;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
   margin-right: 20px;
-  text-decoration: none;
-  color: #2b2b2b;
-  font-weight: 600;
 }
 .button__home:hover {
   background-color: #6c8280;
-  color: #2b2b2b;
 }
 @media screen and (max-width: 1080px) {
   .button__home:hover:active {
     background-color: #6c8280;
-    color: #2b2b2b;
   }
 }
 @media screen and (max-width: 640px) {
-  .button__home:hover {
+  .button__home {
     margin: 0;
   }
 }
+.button__home a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 600;
+}
 @media screen and (max-width: 640px) {
-  .button__home:hover {
+  .button__home a {
     font-size: 14px;
   }
 }
+.button__home a:hover {
+  color: white;
+}
 @media screen and (max-width: 1080px) {
-  .button__home:hover:active {
-    color: #2b2b2b;
+  .button__home a:hover:active {
+    color: white;
   }
 }
 
 .button__up {
   background-color: #d0d9d6;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
   margin-right: 20px;
-  text-decoration: none;
-  color: #2b2b2b;
-  font-weight: 600;
 }
 .button__up:hover {
   background-color: #6c8280;
-  color: #2b2b2b;
 }
 @media screen and (max-width: 1080px) {
   .button__up:hover:active {
     background-color: #6c8280;
-    color: #2b2b2b;
   }
 }
 @media screen and (max-width: 640px) {
@@ -104,7 +103,8 @@
   grid-template-columns: repeat(4, 1fr);
   background-color: #e8dfe1;
   padding: 30px 120px;
-  margin: 60px 0 100px 0;
+  margin-bottom: 60px;
+  margin-top: 30px;
   gap: 20px;
 }
 @media screen and (max-width: 1080px) {
@@ -138,7 +138,7 @@
      object-fit: cover;
   border: 8px solid white;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 .onas__majitelka .onas__majitelka--description {
   grid-column: 1/4;
@@ -195,7 +195,7 @@
   grid-template-rows: repeat(2, auto);
   background-color: #e8dfe1;
   padding: 30px 120px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   gap: 20px;
 }
 @media screen and (max-width: 1080px) {
@@ -229,7 +229,7 @@
      object-fit: cover;
   border: 8px solid white;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 @media screen and (max-width: 450px) {
   .onas__interiery img {
@@ -246,7 +246,7 @@
   grid-template-columns: repeat(2, 1fr);
   background-color: #e8dfe1;
   padding: 30px 120px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   gap: 20px;
 }
 @media screen and (max-width: 1080px) {
@@ -294,7 +294,7 @@
      object-fit: cover;
   border: 8px solid white;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
   margin: auto;
   padding: 0;
 }
@@ -430,7 +430,7 @@
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
   overflow: hidden;
 }
 @media screen and (max-width: 1240px) {
@@ -541,7 +541,6 @@
   background-color: #d0d9d6;
   text-align: right;
   margin: 0;
-  color: #2b2b2b;
 }
 @media screen and (max-width: 1240px) {
   .cake__buttons .cena {
@@ -579,9 +578,9 @@
 }
 .cake__buttons .objednat {
   padding: 10px 20px;
-  background-color: #d0d9d6;
+  background-color: #6c8280;
   border-radius: 20px;
-  color: #2b2b2b;
+  color: white;
   font-size: 14px;
   font-weight: 600;
   margin: 0;
@@ -621,13 +620,11 @@
   }
 }
 .cake__buttons .objednat:hover {
-  background-color: #6c8280;
-  color: white;
+  color: #2b2b2b;
 }
 @media screen and (max-width: 1080px) {
   .cake__buttons .objednat:hover:active {
-    background-color: #6c8280;
-    color: white;
+    color: #2b2b2b;
   }
 }
 
@@ -908,10 +905,10 @@
 
 .svatba__dort--item {
   background-color: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   margin: 0;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 @media screen and (max-width: 640px) {
   .svatba__dort--item {
@@ -965,7 +962,7 @@
   padding: 10px;
   border-radius: 10px;
   margin: 0;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 @media screen and (max-width: 450px) {
   .svatba__cukrovi--item {
@@ -1031,7 +1028,7 @@
   background-color: white;
   border-radius: 20px;
   padding: 15px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 @media screen and (max-width: 1080px) {
   .svatba__zakusky .svatba__zakusky--item {
@@ -1104,7 +1101,7 @@
   background-color: white;
   border-radius: 20px;
   padding: 15px;
-  box-shadow: 2px 2px 5px #c9c8c8;
+  box-shadow: 2px 2px 5px #C9C8C8;
 }
 @media screen and (max-width: 1080px) {
   .svatba__kolace .svatba__kolace--item {
@@ -1146,7 +1143,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   background-color: #e8dfe1;
-  margin: 60px 0 80px 0;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 640px) {
   .kontakt {
@@ -1294,10 +1291,11 @@
 .menu__nabidka {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 120px;
+  padding: 20px 120px 30px 120px;
   justify-items: center;
-  gap: 60px;
-  margin: 60px 0;
+  gap: 40px;
+  margin-bottom: 20px;
+  background-color: #e8dfe1;
   width: 100%;
 }
 @media screen and (max-width: 1080px) {
@@ -1330,7 +1328,6 @@
 
 .menu__item {
   width: 100%;
-  overflow: hidden;
 }
 @media screen and (max-width: 640px) {
   .menu__item {
@@ -1344,43 +1341,22 @@
     width: 100%;
   }
 }
-.menu__item:hover .menu__description {
-  color: #2b2b2b;
-}
-@media screen and (max-width: 1080px) {
-  .menu__item:hover .menu__description:active .menu__description {
-    color: #2b2b2b;
-  }
-}
 
 .menu__image {
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 20px;
-}
-.menu__image:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-@media screen and (max-width: 1080px) {
-  .menu__image:hover:active .menu__description {
-    transition: transform 0.5s;
-  }
 }
 
 .menu__description {
   text-align: center;
   font-family: "Grand Hotel", cursive;
-  color: #858284;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
   padding: 5px 0;
   margin: 0;
-}
-.menu__description:hover {
-  color: #2b2b2b;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 1080px) {
   .menu__description {
@@ -1398,18 +1374,18 @@
   color: #d0d9d6;
   text-align: center;
   font-size: 14px;
-  line-height: 2;
-  padding: 30px 0;
+  line-height: 1.6;
+  padding: 40px 0;
   width: 100%;
 }
 @media screen and (max-width: 1080px) {
   .footer {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 }
 @media screen and (max-width: 640px) {
   .footer {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
@@ -1535,7 +1511,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   padding: 0 120px;
   gap: 30px;
-  margin: 30px 0 10px 0;
+  margin: 30px 0;
   width: 100%;
   justify-content: space-around;
 }
@@ -1557,61 +1533,60 @@ body {
     padding: 0;
   }
 }
-.hero__menu .hero__item {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-}
-.hero__menu .hero__item--active .hero__link {
-  color: "Grand Hotel", cursive;
-}
-.hero__menu .hero__link {
+.hero__menu a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+.hero__menu li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
   font-size: 50px;
   font-family: "Grand Hotel", cursive;
   font-weight: 400;
-  color: #858284;
+  color: #2b2b2b;
   text-align: center;
 }
 @media screen and (max-width: 1080px) {
-  .hero__menu .hero__link {
+  .hero__menu li {
     font-size: 40px;
     margin: 0;
     padding: 0;
   }
 }
 @media screen and (max-width: 640px) {
-  .hero__menu .hero__link {
+  .hero__menu li {
     font-size: 36px;
     padding: 0;
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 450px) {
-  .hero__menu .hero__link {
+  .hero__menu li {
     font-size: 20px;
     gap: 0;
   }
 }
-@media screen and (max-width: 1080px) {
-  .hero__menu .hero__link:active {
-    color: #2b2b2b;
-  }
+.hero__menu li:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #987092;
+          text-decoration-color: #987092;
+  text-underline-offset: 10px;
 }
-.hero__menu .hero__link:hover,
-.hero__menu .hero__link:focus {
-  color: #2b2b2b;
+@media screen and (max-width: 1080px) {
+  .hero__menu li:active {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #987092;
+            text-decoration-color: #987092;
+    text-underline-offset: 10px;
+  }
 }
 
 .line__purple--menu {
-  border: 2px solid #c2a2c0;
-  padding: 0 120px;
-  border-radius: 10px;
-  margin: 0;
-  width: 100%;
+  margin-bottom: 60px;
+  width: 5px;
+  color: #987092;
 }
 
 .error {
@@ -1750,6 +1725,8 @@ body {
 }
 
 .doba {
+  display: flex;
+  flex-direction: column;
   color: #2b2b2b;
   text-align: left;
   line-height: 1.6;
@@ -1774,33 +1751,59 @@ body {
     margin-bottom: 20px;
   }
 }
-.doba .doba__adresa,
-.doba .doba__open {
-  margin: 0 0 30px 0;
-  width: 70%;
-}
-.doba .doba__adresa .doba__nadpis,
-.doba .doba__open .doba__nadpis {
+.doba .doba__nadpis {
   margin-bottom: 10px;
   font-size: 30px;
 }
+.doba .doba__adresa {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
 .doba .doba__description {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1 1 50%;
+  flex-wrap: nowrap;
+  font-size: 18px;
 }
 @media screen and (max-width: 640px) {
   .doba .doba__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
-.doba .doba__time {
-  font-size: 16px;
-  font-weight: 600;
+.doba .doba__mapa {
+  padding: 10px;
+  flex: 1 1 auto;
+  background-color: #c2a2c0;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  border-radius: 30px;
+  width: 30%;
+  font-size: 20px;
+}
+@media screen and (max-width: 640px) {
+  .doba .doba__mapa {
+    width: 25%;
+  }
+}
+.doba .doba__mapa:hover {
+  background-color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .doba .doba__mapa:hover:active {
+    background-color: #987092;
+  }
+}
+.doba .doba__open {
+  flex: 0 1 50%;
+}
+.doba .doba__open .doba__time {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 640px) {
-  .doba .doba__time {
+  .doba .doba__open .doba__time {
     font-size: 16px;
     margin: 0;
   }
@@ -1809,8 +1812,14 @@ body {
 .doba__odkaz {
   text-decoration: none;
   color: #2b2b2b;
-  margin-bottom: 20px;
+  margin: 0;
   padding: 0;
+  font-size: 16px;
+}
+@media screen and (max-width: 640px) {
+  .doba__odkaz {
+    font-size: 14px;
+  }
 }
 .doba__odkaz:hover {
   font-weight: 600;
@@ -1823,38 +1832,10 @@ body {
   }
 }
 
-.doba__mapa {
-  padding: 10px;
-  background-color: #c2a2c0;
-  text-align: center;
-  margin-bottom: 40px;
-  border-radius: 30px;
-  width: 30%;
-  font-size: 16px;
-}
-@media screen and (max-width: 640px) {
-  .doba__mapa {
-    width: 25%;
-    font-size: 14px;
-  }
-}
-.doba__mapa:hover {
-  background-color: #987092;
-}
-@media screen and (max-width: 1080px) {
-  .doba__mapa:hover:active {
-    background-color: #987092;
-  }
-}
-
 .actual {
   color: #2b2b2b;
-  padding: 20px 120px 40px 120px;
+  padding: 20px 120px 0 120px;
   margin-bottom: 60px;
-  color: #2b2b2b;
-  text-align: left;
-  line-height: 1.6;
-  background-color: #e8dfe1;
 }
 @media screen and (max-width: 1080px) {
   .actual {
@@ -1874,10 +1855,9 @@ body {
   }
 }
 .actual .actual__nadpis {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
-  padding-bottom: 10px;
 }
 
 .hero__menu--shadow {
@@ -1963,11 +1943,10 @@ body {
   display: flex;
   justify-content: space-around;
   flex: 0 1 auto;
-  overflow: hidden;
   padding: 10px 120px;
   margin-bottom: 60px;
-  list-style: none;
   background-color: #e8dfe1;
+  list-style: none;
 }
 @media screen and (max-width: 1080px) {
   .menu__small {
@@ -1991,71 +1970,135 @@ body {
 }
 
 .menu__mainitem--dorty,
-.menu__mainitem--zakusky,
-.menu__mainitem--svatba {
-  text-align: center;
-  padding: 5px 0;
-  margin: 0;
+.menu__mainitem--zakusky {
+  font-size: 30px;
+  font-weight: 600;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
   .menu__mainitem--dorty,
-.menu__mainitem--zakusky,
-.menu__mainitem--svatba {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .menu__mainitem--dorty,
-.menu__mainitem--zakusky,
-.menu__mainitem--svatba {
-    font-size: 24px;
-  }
-}
-.menu__mainitem--dorty .menu__link,
-.menu__mainitem--zakusky .menu__link,
-.menu__mainitem--svatba .menu__link {
-  text-decoration: none;
-  font-family: "Grand Hotel", cursive;
-  font-weight: 400;
-  font-size: 42px;
-  color: #858284;
-}
-.menu__mainitem--dorty .menu__link:hover,
-.menu__mainitem--zakusky .menu__link:hover,
-.menu__mainitem--svatba .menu__link:hover {
-  color: #2b2b2b;
-}
-@media screen and (max-width: 1080px) {
-  .menu__mainitem--dorty .menu__link:hover:active,
-.menu__mainitem--zakusky .menu__link:hover:active,
-.menu__mainitem--svatba .menu__link:hover:active {
-    color: #2b2b2b;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .menu__mainitem--dorty .menu__link,
-.menu__mainitem--zakusky .menu__link,
-.menu__mainitem--svatba .menu__link {
-    font-size: 38px;
+.menu__mainitem--zakusky {
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 640px) {
-  .menu__mainitem--dorty .menu__link,
-.menu__mainitem--zakusky .menu__link,
-.menu__mainitem--svatba .menu__link {
-    font-size: 32px;
+  .menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 450px) {
-  .menu__mainitem--dorty .menu__link,
-.menu__mainitem--zakusky .menu__link,
-.menu__mainitem--svatba .menu__link {
-    font-size: 20px;
+  .menu__mainitem--dorty,
+.menu__mainitem--zakusky {
+    font-size: 18px;
+  }
+}
+.menu__mainitem--dorty a,
+.menu__mainitem--zakusky a {
+  text-decoration: none;
+  color: #c2a2c0;
+}
+.menu__mainitem--dorty a:hover,
+.menu__mainitem--zakusky a:hover {
+  color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .menu__mainitem--dorty a:hover:active,
+.menu__mainitem--zakusky a:hover:active {
+    color: #987092;
   }
 }
 
-.menu__mainitem--active .menu__link {
-  color: "Grand Hotel", cursive;
+.submenu__cakes {
+  display: flex;
+  padding: 0 120px 20px 120px;
+  justify-content: start;
+  background-color: #e8dfe1;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1080px) {
+  .submenu__cakes {
+    padding: 0 90px 20px 90px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .submenu__cakes {
+    padding: 0 60px 10px 60px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submenu__cakes {
+    padding: 0 40px 10px 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .submenu__cakes {
+    padding: 0 20px 10px 20px;
+  }
+}
+.submenu__cakes a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .submenu__cakes a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .submenu__cakes a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .submenu__cakes a {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+.submenu__cakes a:hover {
+  color: #987092;
+}
+@media screen and (max-width: 1080px) {
+  .submenu__cakes a:hover:active {
+    color: #987092;
+  }
+}
+
+.menu__mainitem--svatba {
+  /*položky dorty, zákusky, svatba - li*/
+  font-size: 30px;
+  font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+  .menu__mainitem--svatba {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu__mainitem--svatba {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu__mainitem--svatba {
+    font-size: 18px;
+  }
+}
+.menu__mainitem--svatba a {
+  text-decoration: none;
+  color: #c2a2c0;
+}
+.menu__mainitem--svatba a:hover {
+  color: #987092;
+}
+.menu__mainitem--svatba a:hover:active {
+  color: #987092;
 }
 
 .submenu__svatba {

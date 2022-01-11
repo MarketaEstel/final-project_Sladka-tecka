@@ -3,9 +3,7 @@ layout: layouts/hlavni-sablona.njk
 title: Kontakt
 --- 
 
-{% include 'partials/hero-menu-shadow.njk' %}
-
-{% include 'partials/menu-zakusky.njk' %}
+{% include 'partials/hero-menu.njk' %}
 
     <div class="kontakt">
         <div class="kontakt__udaje">
@@ -64,12 +62,4 @@ title: Kontakt
     </div>-->
 </div>
 
-<div class="button__homeandup">
-    <div class="button__home">
-        <a href="#">Úvod</a> 
-    </div>
-
-    <div class="button__up">
-        <a href="#">Nahoru</a> 
-    </div>
-</div>
+{% include 'partials/button-up-and-home.njk' %} 

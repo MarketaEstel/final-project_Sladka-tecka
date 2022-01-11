@@ -1,19 +1,13 @@
-<div id="hero" class="hero">
+<div id="hero">
     <ul class="hero__menu">
-        <a href="/objednavka/">
-        <div class="hero__item">
-            <li>Objednávka</li>
-        </div>
-        </a>
-        <a href="/onas/">
-            <div class="hero__item">
-                <li>O nás</li>
-            </div>
-        </a>
-        <a href="/kontakt/">
-            <div class="hero__item">
-                <li>Kontakt</li>
-            </div>
-        </a>
+        <li class="hero__item {{ 'hero__item--active' if page.fileSlug === ''}} "><a href="/" class="hero__link">Úvod</a></li>
+
+        <li class="hero__item {{ 'hero__item--active' if page.fileSlug === 'objednavka'}}"><a href="/objednavka/" class="hero__link">Objednávka</a></li>
+
+        <li class="hero__item {{ 'hero__item--active' if page.fileSlug === 'onas'}}"><a href="/onas/" class="hero__link">O nás</a></li>
+
+        <li class="hero__item {{ 'hero__item--active' if page.fileSlug === 'kontakt'}}"><a href="/kontakt/" class="hero__link">Kontakt</a></li>
     </ul>
 </div>
+
+<hr class="line__purple--menu">

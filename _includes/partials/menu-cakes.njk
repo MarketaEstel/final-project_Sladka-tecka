@@ -1,15 +1,12 @@
-    <ul class="menu__small">
-        <li class="menu__mainitem--dorty"><a href="/dorty/">Dorty</a></li>
-        <li class="menu__mainitem--zakusky"><a href="/zakusky/">Zákusky</a></li>
-        <li class="menu__mainitem--svatba"><a  href="/svatba/">Svatba</a></li>
-    </ul>
+<ul class="menu__small">
+    <li class="menu__mainitem--dorty {{ 'menu__mainitem--active' if page.fileSlug === 'dorty' }}"><a class="menu__link" href="/dorty/">Dorty</a></li>
 
-    <ul class="submenu__cakes">
-        <li class="submenu__item"><a href="#cakes_klasik">Klasické</a></li>
-        <li class="submenu__item"><a href="#cakes_detske">Dětské</a></li>
-        <li class="submenu__item"><a href="#cakes_svatba">Svatební</a></li>
-        <li class="submenu__item"><a href="#cakes_vyroci">Narozeninové</a></li>
-    </ul>
+    <li class="menu__mainitem--zakusky {{ 'menu__mainitem--active' if page.fileSlug === 'zakusky' }}"><a class="menu__link" href="/zakusky/">Zákusky</a></li>
+
+    <li class="menu__mainitem--svatba {{ 'menu__mainitem--active' if page.fileSlug === 'svatba' }}"><a class="menu__link" href="/svatba/">Svatba</a></li>
+</ul>
+
+    
 
     
     

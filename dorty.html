@@ -3,7 +3,7 @@ layout: layouts/hlavni-sablona.njk
 title: Dorty
 ---
 
-{% include 'partials/hero-menu-shadow.njk' %}
+{% include 'partials/hero-menu.njk' %}
 
 {% include 'partials/menu-cakes.njk' %}
     
@@ -98,17 +98,7 @@ title: Dorty
     </div>
 </div>
 
-<div class="button__homeandup">
-    <div class="button__home">
-        <a href="/">Úvod</a> 
-    </div>
-
-    <div class="button__up">
-        <a href="#hero_shadow">Nahoru</a> 
-    </div>
-</div>
-
-
+{% include 'partials/button-up-and-home.njk' %} 
 
 <div id="cakes_detske" class="cakes__detske">
     
@@ -221,15 +211,7 @@ title: Dorty
     </div>
 </div>
 
-<div class="button__homeandup">
-    <div class="button__home">
-        <a href="/">Úvod</a> 
-    </div>
-
-    <div class="button__up">
-        <a href="#hero_shadow">Nahoru</a> 
-    </div>
-</div>
+{% include 'partials/button-up-and-home.njk' %} 
 
 <div id="cakes_svatba" class="cakes__svatba">
 
@@ -313,15 +295,7 @@ title: Dorty
 
 </div>
 
-<div class="button__homeandup">
-    <div class="button__home">
-        <a href="/">Úvod</a> 
-    </div>
-
-    <div class="button__up">
-        <a href="#hero_shadow">Nahoru</a> 
-    </div>
-</div>
+{% include 'partials/button-up-and-home.njk' %} 
 
 <div id="cakes_vyroci" class="cakes__vyroci">
 
@@ -344,7 +318,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_fiskars--small.jpg" alt="Dort Fiskars"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_fiskars.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_fiskars--small.jpg" alt="Dort Fiskars"></a>
         <h3>Fiskars k dvacetinám</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -354,7 +328,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_kachna_se_zelim--small.jpg" alt="Dort kucharovi"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_kachna_se_zelim.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_kachna_se_zelim--small.jpg" alt="Dort kucharovi"></a>
         <h3>Dort Kachna se zelím</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -364,7 +338,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_kometa--small.jpg" alt="Dort kometa"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_kometa.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_kometa--small.jpg" alt="Dort kometa"></a>
         <h3>Oslava hokejové Komety</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -374,7 +348,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_narozeniny03_galerie--small.jpg" alt="Dort zabijačka"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_narozeniny30_galerie.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_narozeniny03_galerie--small.jpg" alt="Dort zabijačka"></a>
         <h3>Zabijačka pro dědu</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -384,7 +358,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_ruze55--small.jpg" alt="Dort s ruzemi"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_ruze55.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_ruze55--small.jpg" alt="Dort s ruzemi"></a>
         <h3>Kulatý s růžemi pro maminku</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -394,7 +368,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_srdce_babicce--small.jpg" alt="Dort srdce"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_srdce_babicce.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_srdce_babicce--small.jpg" alt="Dort srdce"></a>
         <h3>Srdce pro babičku</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -404,7 +378,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_vcelky--small.jpg" alt="Dort vceli plastev"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_vcelky.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_vcelky--small.jpg" alt="Dort vceli plastev"></a>
         <h3>Včelí plástev</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -414,7 +388,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_veterina--small.jpg" alt="Dort s motivem veteriny"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_veterina.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_veterina--small.jpg" alt="Dort s motivem veteriny"></a>
         <h3>K promoci na veterině</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -424,7 +398,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_coko_ovoce--small.jpg" alt="Dort smetanový s čokoládou a ovocem"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_coko_ovoce.jpg"><img class="cake__image" src="/images/dorty/vyroci/dort_coko_ovoce--small.jpg" alt="Dort smetanový s čokoládou a ovocem"></a>
         <h3>Dort smetanový s čokoládou a ovocem</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -434,7 +408,7 @@ title: Dorty
     </div>
 
     <div class="cake">
-        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_80.jpg"><img class="cake__image" src="/images/dorty/vyroci/red_velvet_rafaelo--small.jpg" alt="Dort red velvet s ovocema rafaelo"></a>
+        <a data-fslightbox="vyroci" href="/images/dorty/vyroci/galerie/dort_red_velvet_rafaelo.jpg"><img class="cake__image" src="/images/dorty/vyroci/red_velvet_rafaelo--small.jpg" alt="Dort red velvet s ovocema rafaelo"></a>
         <h3>Red velvet s ovocem a rafaelo</h3>
             <!-- <div class="cake__buttons">
                 <p class="cena">650 Kč</p>
@@ -444,15 +418,7 @@ title: Dorty
     </div>
 </div>
 
-<div class="button__homeandup">
-    <div class="button__home">
-        <a href="/">Úvod</a> 
-    </div>
-
-    <div class="button__up">
-        <a href="#hero_shadow">Nahoru</a> 
-    </div>
-</div>
+{% include 'partials/button-up-and-home.njk' %} 
 
 
 

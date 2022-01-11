@@ -1,149 +1,77 @@
-@use 'colours';
+@use "colours";
 
-.menu__small { 
-    display: flex;
-    justify-content: space-around;
-    flex: 0 1 auto;
-    padding: 10px 120px;
-    margin: 0;
-    background-color: colours.$button-purple-colour-light;
-    list-style: none;
+.menu__small {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 auto;
+  overflow: hidden;
+  padding: 10px 120px;
+  margin-bottom: 60px;
+  list-style: none;
+  background-color: colours.$button-purple-colour-light;
 
-    @media screen and (max-width: 1080px) {
-        padding: 10px 90px;
-    }
+  @media screen and (max-width: 1080px) {
+    padding: 10px 90px;
+  }
 
-    @media screen and (max-width: 900px) {
-        padding: 10px 60px;
-    }
+  @media screen and (max-width: 900px) {
+    padding: 10px 60px;
+  }
 
-    @media screen and (max-width: 640px) {
-        padding: 10px 40px;
-    }
+  @media screen and (max-width: 640px) {
+    padding: 10px 40px;
+  }
 
-    @media screen and (max-width: 450px) {
-        padding: 10px 20px;
-    }
-
+  @media screen and (max-width: 450px) {
+    padding: 10px 20px;
+  }
 }
 
 .menu__mainitem--dorty,
-.menu__mainitem--zakusky {
+.menu__mainitem--zakusky,
+.menu__mainitem--svatba {
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+
+  @media screen and (max-width: 1080px) {
     font-size: 30px;
-    font-weight: 600;
+  }
 
-    @media screen and (max-width: 900px) {
-        font-size: 26px;
-    }
+  @media screen and (max-width: 450px) {
+    font-size: 24px;
+  }
 
-    @media screen and (max-width: 640px) {
-        font-size: 22px;
-    }
-
-    @media screen and (max-width: 450px) {
-        font-size: 18px;
-    }
-
-    a {
-        text-decoration: none;
-        color: colours.$button-purple-colour;
-
-        &:hover {
-            color: colours.$colour-hover;
-
-            @media screen and (max-width: 1080px) {
-                &:active {
-                    color: colours.$colour-hover;
-                    }
-                }
-        }
-    }
-}
-
-.menu__mainitem--zakusky {
-    font-size: 30px;
-    font-weight: 600;
-
-    @media screen and (max-width: 900px) {
-        font-size: 26px;
-    }
-
-    @media screen and (max-width: 640px) {
-        font-size: 22px;
-    }
-
-    @media screen and (max-width: 450px) {
-        font-size: 18px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-.submenu__cakes {
-    display: flex;
-    padding: 0 120px 20px 120px;
-    justify-content: start;
-    background-color: colours.$button-purple-colour-light;
-    font-size: 18px;
-    list-style: none;
+  .menu__link {
     text-decoration: none;
-    overflow: hidden;
-    margin-bottom: 30px;
+    font-family: colours.$font-motto;
+    font-weight: 400;
+    font-size: 42px;
+    color: colours.$font-colour-shadow;
 
-    @media screen and (max-width: 1080px) {
-        padding: 0 90px 20px 90px;
+    &:hover {
+      color: colours.$font-colour;
+
+      @media screen and (max-width: 1080px) {
+        &:active {
+          color: colours.$font-colour;
+        }
+      }
     }
-
-    @media screen and (max-width: 900px) {
-        padding: 0 60px 10px 60px;
+    @media screen and (max-width: 1080px) {
+      font-size: 38px;
     }
 
     @media screen and (max-width: 640px) {
-        padding: 0 40px 10px 40px;
+      font-size: 32px;
     }
 
     @media screen and (max-width: 450px) {
-        padding: 0 20px 10px 20px;
+      font-size: 20px;
     }
-        
-    a {
-        text-decoration: none;
-        padding: 0 10px;
-        font-size: 20px;
-        color: white;
-
-        @media screen and (max-width: 900px) {
-            font-size: 18px;
-        }
-
-        @media screen and (max-width: 640px) {
-            font-size: 16px;
-        }
-
-        @media screen and (max-width: 450px) {
-            font-size: 14px;
-            padding: 5px;
-        }
-
-        &:hover {
-            color: colours.$colour-hover;
-            
-            @media screen and (max-width: 1080px) { 
-                &:active {
-                    color: colours.$colour-hover;
-                }
-            }
-        }
-    }
+  }
 }
 
-
-.menu__mainitem--dorty a:hover {
-    a .submenu__cakes {
-            color: colours.$font-colour;
-        }
-    }
-
+.menu__mainitem--active .menu__link {
+  color: colours.$font-motto;
+}
